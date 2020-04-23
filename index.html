@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--
+        Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+        Fair is fair. Answers on a postcard, please ;-)						
+                
+        Start.	
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+        8   8               8               8           8                   8   8
+        8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+        8               8       8   8           8           8   8   8       8   8
+        8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+        8       8   8               8           8   8   8   8   8           8   8
+        8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+        8   8               8   8   8       8           8           8       8   8
+        8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+        8           8       8   8       8   8       8           8   8           8
+        8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+        8       8       8   8   8       8       8       8   8   8       8       8
+        8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+        8           8   8           8       8   8       8   8       8           8
+        8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+        8   8       8           8           8       8   8   8               8   8
+        8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+        8   8           8   8   8   8   8           8               8   8       8
+        8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+        8   8       8   8   8           8           8   8       8               8
+        8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+        8   8                   8           8               8               8   8
+        8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+        End.
+        -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156160652-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-156160652-1');
+        </script>
+        <!-- Google Analytics: END -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NMMNBFW');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="canonical" href="https://heiux.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="styles/img/favicon.ico" type="image/x-icon">
+
+        <title>Tomas HEI</title>
+        <meta name="description" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">    
+
+        <meta name="keywords" content="UX, UI, UX/UX, User Experience, Design, Product, Architecture, Architect, Tomas, HEI, Czarnecki">
+        <meta name="author" content="Tomas HEI Czarnecki">
+
+        <!--Google-->
+        <meta itemprop="name" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">
+        <meta itemprop="description" content="UX Designer">
+        <meta itemprop="image" content="http://heiux.com/styles/img/social-share-img-v1.jpg">
+        
+        <!--Facebook-->    
+        <meta property="og:title" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://heiux.com"/>
+        <meta property="og:image" content="http://heiux.com/styles/img/social-share-img-v1.jpg"/>
+        <meta property="og:description" content="UX Designer"/>
+
+        <link rel="stylesheet" href="styles/css/style_scroll.css">
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/menu_hamburger.css">
+        <link rel="stylesheet" href="styles/css/style_animation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/style_media.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMNBFW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- START: Progress BAR -->
+<div class="line" id="scrollIndicator"></div>
+
+<!-- START: Navigation -->
+<nav>
+        <div class="myNav wrapper">
+            <a href="index.html"><img src="styles/img/Logo_HEI.svg"/></a>
+            <div id="menuHamburger"> 		
+                    <input type="checkbox">
+                    <!-- <div id="menushadow"></div> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>	
+                    <ul id="menu">
+                        <li class="imgXS"><a href="index.html">Home</a></li>
+                        <li><a href="#portfolioUX">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/Resume_TomasHEI.pdf" target="_blank">Resume</a></li>
+                        <li><a href="contact.html"><button class="btn1 btn-menu">Contact</button></a></li>
+                        <!-- <li><a href="assets/Resume_TomasHEI.pdf"><img src="styles/img/icons/wechat.svg"></a></li> -->
+                    </ul>
+            </div>
+        </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- Hero Content -->
+<article id="homeHero" class="bgNone fullScreen myHero myHero-MarginTop">
+        <!-- Fancy Background -->
+                <div class="bgNoise"></div>
+                <div class="bgBluePrint"></div>                  
+        <!-- Hero Content -->
+        <div class="wrapper wrapper-margin center xl-left">
+                <h1>Hi! <img src="styles/img/diagrams/nihao.svg"><br> I am Tomas</h1>
+                <h2>a <span class="h2Red">UX Designer</span><br>with an Intercultural Background</h2>
+                <p><a href="#portfolioUX"><button class="btn1">See selected projects</button></a> 
+                <!-- <a onclick="ga('send', 'event', 'PDF', 'Download', 'PDF Download');" href="assets/Resume_TomasHEI.pdf"><button class="btn2">Save resume</button></a></p> -->
+                <a href="assets/Resume_TomasHEI.pdf" target="_blank"><button class="btn2">Download resume</button></a></p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p><spand class="pLight">Reply Time:</spand> within 1-2 working days</p>
+                </div></a>
+        </div>
+
+        <!-- Bottom Arrow -->
+        <div class="Arrow_Down">
+                <a href="#designProcess"><img src="styles/img/Arrow_Down.svg" alt=""></a>
+        </div>        
+</article>
+
+<!-- Start Article Content -->
+<article id="designProcess" class="bgWhite fullScreen">
+        <div class="wrapper wrapper-margin center">
+                <h1>Framework for Innovation</h1>
+                <p class="pBig pMargin pArticle"><span class="pDark"></span>
+                        &nbsp; &nbsp; When designing <span class="pDark">digital products</span> today, it is both impossible and unsensible to set up a <span class="pDark">rigid process</span> and follow if for every situation. We need to be <span class="pDark">agile</span> and quick to adapt to the <span class="pDark">ever-changing</span> market situation.
+                        <br><br>
+                        &nbsp; &nbsp; However, if you did things <span class="pDark">randomly</span>, you would always get random results. It is why I use the <span class="pDark">Double Diamond</span> Framework for Innovation: an agile and lightweight design process. Before I start any new job, together with a client, we firstly perform <span class="pDark">comprehensive</span> research and decide the appropriate tool-set. The Double Diamond is not dogma, just a starting point...<br><br>
+                </p>
+                <!-- <p class="pBig pMargin"><span class="pDark"></span>
+                        Reach your business goals with an excellent user experience.<br>Let’s start working on your awesome idea!
+                </p> -->
+                <img class="articleImg imgXS" src="styles/img/diagrams/designProcess_Mobile.svg" alt="">
+                <img class="articleImg imgM" src="styles/img/diagrams/designProcess.svg" alt="">
+                <p class="pBig pMargin pArticle"><br>
+                        &nbsp; &nbsp; Every day, I work to <span class="pDark">improve</span> my workflow. I am constantly reading about different <span class="pDark">methodologies</span>, broaden my knowledge of <span class="pDark">usability heuristics</span> and <span class="pDark">psychology</span>.
+                        <!-- <br><br>
+                        Art school knowledge is not dogma, just a starting point... -->
+                </p>     
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Send me an email</button></a>
+        </div>                     
+        <!-- Bottom Arrow -->       
+        <div class="Arrow_Down">
+                <a href="#portfolioUX"><img src="styles/img/Arrow_Down_Dark.svg" alt=""></a>
+        </div>
+</article>
+
+<!-- Start UX PORTFOLIO -->
+<article id="portfolioUX" class="bgGreenLight">
+<div class="wrapper wrapper-margin">
+        <div class="portfolioUX">
+                <div class="imgM">
+                        <img src="styles/img/01_OpenReminder_UX.jpg">
+                </div>                        
+                <div class="portfolioText">
+                        <h1 class="hPortfolio">01</h1>
+                        <h1>Open Reminder</h1>
+                        <h2 class="">UX Process</h2>
+                        <img class="imgXS" src="styles/img/01_OpenReminder_UX.jpg">
+                        <p class="pBig"><span class="pDark"></span>
+                                A redesign case-study of an open-source Pill Reminder for Android. The following section describes a comprehensive UX process undertaken to increase usability.
+                        </p>
+                                <a href="portfolioUX_0.html"><button class="btn3">Read UX Case Study</button></a>
+                </div>
+        </div>
+</div>
+</article>
+
+<article class="bgOrangeLight">
+        <div class="wrapper wrapper-margin">
+                <div class="portfolioUX portfolioReverse">
+                        <div class="imgM">
+                                <img src="styles/img/02_OpenReminder_UI.jpg">
+                        </div>                         
+                        <div class="portfolioText">
+                                <h1 class="hPortfolio">02</h1>
+                                <h1>Open Reminder</h1>
+                                <h2 class="">UI Design</h2>
+                                <img class="imgXS" src="styles/img/02_OpenReminder_UI.jpg">
+                                <p class="pBig">                                     
+                                        Part two of the redesign case-study. The following section presents a  new concept of UI, based on the preceding comprehensive UX process and its deliverables.  
+                                </p>
+                                <a href="portfolioUI_0.html"><button class="btn3">See UI Design Concept</button></a>
+                        </div>
+                </div>
+</div>
+</article>
+
+<article class="bgPinkLight">
+        <div class="wrapper wrapper-margin">
+                <div class="portfolioUX">
+                        <div class="imgM">
+                                <img src="styles/img/03_DailyUI.jpg">
+                        </div>                        
+                        <div class="portfolioText">
+                                <h1 class="hPortfolio">03</h1>
+                                <h1>Daily UI</h1>
+                                <h2 class="">Challenge</h2>
+                                <img class="imgXS" src="styles/img/03_DailyUI.jpg">
+                                <p class="pBig">
+                                        The following section presents the results of my Daily UI challenge. I am a lifelong learner, constantly looking for opportunities to acquire new experiences.   
+                                </p>
+                                <a href="portfolioDailyUI_0.html"><button class="btn3">See Daily UI Challenge</button></a>
+                        </div>
+                </div>
+</div>
+</article>
+
+<article class="bgBlueLight">
+        <div class="wrapper wrapper-margin">
+                <div class="portfolioUX portfolioReverse">
+                        <div class="imgM">
+                                <img src="styles/img/04_FrontEnd.jpg">
+                        </div>                        
+                        <div class="portfolioText">
+                                <h1 class="hPortfolio">04</h1>
+                                <h1>Front-end Development</h1>
+                                <!-- <h2 class="">UI Design</h2> -->
+                                <img class="imgXS" src="styles/img/04_FrontEnd_Small.jpg">
+                                <p class="pBig">
+                                        I am a designer who can code. I am able to bring your amazing idea to life using HTML, CSS, JavaScript or integrate the web-page with popular CMS like Wordpress.
+                                </p>
+                                <!-- <a href="portfolioUX_0.html"><button class="btn3">Read Case Study</button></a> -->
+                        </div>
+                </div>
+</div>
+</article>
+
+<!-- Start ArchITERCTURE PORTFOLIO -->
+<article id="archHero" class="bgDark fullScreen">
+        <div class="wrapper wrapper-margin center">
+                <h1>I am also a successful Architect</h1>
+                <p class="pBig pMargin pArticle"><span class="pLight"></span>
+                        &nbsp; &nbsp; I have six years of <span class="pLight">overseas work experience</span> in the field of design. I had opportunities to work for <span class="pLight">star architects</span>, big design corporations, small studios, to start Ph.D. and to become a freelancer. My way was not straightforward, but the diverse <span class="pLight">mentors</span> and <span class="pLight">friends</span>, whom I met on my way helped me to become a better version of myself. 
+                </p>
+                <br><br>
+                <div class="testimonials">
+                        <img class="imgXS" src="styles/img/portrait_MaYanSong.svg">
+                        <p>"Most importantly, he has great working habits, extremely well organized in all aspects, always looking into possible ways to improve his own work and his team's."</p>
+                        <div>
+                        <img class="imgM" src="styles/img/portrait_MaYanSong.svg">
+                        <span>Ma Yansong<br>Founder, Principal of MAD Architects<br>www.i-mad.com</span>
+                        <img src="styles/img/signature_MaYanSong.svg">
+                        </div>                  
+                </div>
+                <p class="pMargin"><span class="pLight"></span>
+                        Do you have any questions or just want to chat? Please do not hesitate to contact me.      
+                </p>
+                <a href="mailto:tomas@heiux.com"><button class="btn4">Let's get in touch</button></a>
+
+                        <!-- Bottom Arrow -->
+  
+        </div>
+        <div class="Arrow_Down">
+                <a href="#archPortfolio"><img src="styles/img/Arrow_Down.svg" alt=""></a>
+        </div>
+</article>
+
+<article id="archPortfolio" class="bgWhite">
+        <div class="wrapper wrapper-margin center">
+                <!-- <h1>Architecture</h1> -->
+
+                <div class="portfolioArchi">
+                        <div>
+                                <img src="styles/img/architecture/Project_0_IntroSmall.jpg" alt="">
+                                <h3>Chengdu EcoCity</h3>
+                                <p>
+                                        A won competition project of a new center for HuangGuanHu district. The main goal of this project was to magnify the presence of water in urban structure and to improve natural ventilation. 
+                                </p>
+                                <a href="portfolioArch_0.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_1_IntroSmall.jpg" alt="">
+                                <h3>Harbin Opera House</h3>
+                                <p>Where the enchantingly fluid curves span the interior of the building and resemble a breathtaking structure that has been formed by the natural forces of Harbin Cultural Island.</p>
+                                <a href="portfolioArch_1.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_3_IntroSmall.jpg" alt="">
+                                <h3>Xiamen TOD Planning</h3>
+                                <p>Series of 3 interconnected competitions to design new districts of Xiamen. The greatest challenge of those projects was to incorporate subway transportation channels into the urban structure.</p>
+                                <a href="portfolioArch_3.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_2_IntroSmall.jpg" alt="">
+                                <h3>Gangxia North Hub</h3>
+                                <p>A project of a new mayor subway hub in Shenzhen, located in heart of the city the project will serve as a new communication, commercial and restaurant center of the administrative district.</p>
+                                <a href="portfolioArch_2.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_4_IntroSmall.jpg" alt="">
+                                <h3>Xinhee Design Center</h3>
+                                <p>“We envision it as a building with skin-and-bones,” reveals MAD founding principal Ma Yansong, “the correspondence of clothing and architecture is they both explore the relationship between the interior and the exterior.”</p>
+                                <a href="portfolioArch_4.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_5_IntroSmall.jpg" alt="">
+                                <h3>Cracow Music Academy</h3>
+                                <p>A competition project for designing a new campus of elite Music Academy in Cracow. Conception in the simplest possible way connects complex requirements and highest acoustic standards. </p>
+                                <a href="portfolioArch_5.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_6_IntroSmall.jpg" alt="">
+                                <h3>Admiral Gateway ChengHo</h3>
+                                <p>A concept design of newly planned residential and hotel district in Malaysia. The project focused on three high-rise towers serving as an entrance to the estate. </p>
+                                <a href="portfolioArch_6.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                        <div>
+                                <img src="styles/img/architecture/Project_7_IntroSmall.jpg" alt="">
+                                <h3>Master Thesis</h3>
+                                <p>The final project realized under the supervision of prof. Piotr Marciniak. It is a concept of a multi-functional hall located on Kurucesme islet in the heart of Istanbul.</p>
+                                <a href="portfolioArch_7.html" class="portfolioButton"><button class="btn2">Read More</button></a>
+                        </div>
+                </div>
+
+                <!-- <br><br>
+                <div class="testimonials testimonialsDark">
+                        <img class="imgXS" src="styles/img/portrait_profMarciniak.svg">
+                        <p>"Tomasz made a great effort to investigate the problem and then during the research process he kept the highest standards, and followed very clear logic."</p>
+                        <div>
+                        <img class="imgM" src="styles/img/portrait_profMarciniak.svg">
+                        <span>Piotr Marciniak<br>Professor at PUT<br>www.put.poznan.pl</span>
+                        <img src="styles/img/signature_profMarciniakDark.svg">
+                        </div>                  
+                </div> -->
+
+
+        </div>
+</article>
+
+<!-- ABOUT ME SHORT -->
+<article class="bgPurple fullScreen">
+        <div class="wrapper wrapper-margin center">
+                <h1>Intercultural Proficiency</h1>
+                <p class="pBig pMargin pArticle"><span class="pLight"></span>
+                        &nbsp; &nbsp; During these last years, I have had the chance to live and work in three different cultural backgrounds. I was born and raised in <span class="pLight">Europe</span>, studied in the <span class="pLight">Middle East</span> and worked in <span class="pLight">East Asia</span>. This unique cultural background thought me great respect for cultural diversity. I believe that every human being is <span class="pLight">unique</span> and worth to be listened to. 
+                </p>
+                        <img src="styles/img/diagrams/intercultural.svg">
+                        <p class="pMargin"><span class="pLight"></span>
+                                I speak <span class="pLight">English</span>, <span class="pLight">Polish</span> and <span class="pLight">Chinese</span>. Additionally, I am able to communicate in German and Turkish. If I could help you or share any experience, I am always happy to build <span class="pLight">new friendships</span>.   
+                        </p>
+                <a href="about.html"><button class="btn1">Read my story</button></a>
+                        
+        </div>
+</article>
+
+<article class="bgWhite ">
+        <div class="wrapper wrapper-margin wrapper-nomrgbot center xl-left">
+                <h4 class="pMargin">Nice to meet you</h4><br>
+                <h1 class="pMargin">Hi there,<br>I am Tomas</h1>
+                
+                <p class="pBig pMargin"><span class="pDark"></span>                        
+                        My name is Tomas. I work as a <span class="pDark">User Interface</span> & <span class="pDark">User Experience</span> designer sharing my time between Europe and China.
+                        <br><br>
+                        Currently, I am looking for interesting projects or business opportunities I could <span class="pDark">contribute</span> to.
+                        <br><br>  
+                        I am passionate about building and designing delightful experiences with a combination of business, marketing, and UX/UI. My primary goal is to make customers and <span class="pDark">users satisfied</span> when they are using products online.
+                        <br><br>
+                </p>
+                        <img class="articleImg imgXS" src="styles/img/diagrams/5daysSprint_Sprint_XS.svg" alt="">
+                        <img class="articleImg imgM articleImgSmall" src="styles/img/diagrams/5daysSprint_Sprint_M.svg" alt="">
+
+                
+                <p class="pBig pMargin"><span class="pDark"></span>
+                        <br><br>
+                        I normally work in <span class="pDark">5 days-long sprints</span>, providing design updates in steady stream.
+                        <br>
+                </p>
+
+                <a class="pMargin" href="mailto:tomas@heiux.com"><div class="myPortrait myPortraitDark">
+                        <img src="styles/img/portraitSmall.svg" alt=""><p>Tomas HEI Czarnecki</p>
+                </div></a>
+                
+
+                <p class="pMargin">
+                        <a href="contact.html"><button class="btn1">Start a project</button></a> 
+                        <a href="about.html" class="portfolioButton"><button class="btn2">About Me</button></a>
+                </p>
+
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div> 
+        </div>
+</article>
+
+
+
+<!-- Start FOOTER -->
+<footer class="bgDark">
+        <div class="wrapper center">
+                <h4>Get in touch</h4><br>
+                <h1>Let's work together</h1>
+                <p class="pMargin">
+                        If you have an online business or mobile app idea in your mind or you need some creative advice about product design, please feel free to contact me.  
+                </p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p>Reply Time: within 1-2 working days</p>
+                </div></a><br>
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Let's work together</button></a><br>
+                <div class="mySocial">
+                        <a target="_blank" href="mailto:tomas@heiux.com"><img src="styles/img/icons/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/tczarnecki/"><img src="styles/img/icons/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/tomas_hei/"><img src="styles/img/icons/instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://medium.com/@tomasz_czarnecki"><img src="styles/img/icons/medium.svg" alt=""></a>
+                        <!-- <a target="_blank" href="https://github.com/tomashei"><img src="styles/img/icons/github.svg" alt=""></a> -->
+                        <a target="_blank" href="https://dribbble.com/tomas_hei"><img src="styles/img/icons/dribbble.svg" alt=""></a>
+                </div>
+                <p class="pMargin pSmall">
+                        © 2020 All rights reserved.<br><span class="pLight"><a href="mailto:tomas@heiux.com">Designed & Coded by Tomas HEI</a></span>
+                </p>
+        </div>
+</footer>
+
+<script src="styles/javascript/script.js"></script>
+<!-- <script src="script_scroll.js"></script>
+<script src="style_imagesscroll.js"></script>
+<script src="script_touchswipe.js"></script> -->
+<script src="styles/javascript/sript_scroll.js"></script>
+
+</body>
+</html>
