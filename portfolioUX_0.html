@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <!--
+                Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+                Fair is fair. Answers on a postcard, please ;-)						
+                        
+                Start.	
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+                8   8               8               8           8                   8   8
+                8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+                8               8       8   8           8           8   8   8       8   8
+                8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+                8       8   8               8           8   8   8   8   8           8   8
+                8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+                8   8               8   8   8       8           8           8       8   8
+                8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+                8           8       8   8       8   8       8           8   8           8
+                8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+                8       8       8   8   8       8       8       8   8   8       8       8
+                8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+                8           8   8           8       8   8       8   8       8           8
+                8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+                8   8       8           8           8       8   8   8               8   8
+                8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+                8   8           8   8   8   8   8           8               8   8       8
+                8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+                8   8       8   8   8           8           8   8       8               8
+                8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+                8   8                   8           8               8               8   8
+                8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+                End.
+                -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156160652-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());        
+        gtag('config', 'UA-156160652-1');
+        </script>
+        <!-- Google Analytics: END -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NMMNBFW');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="canonical" href="https://heiux.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="styles/img/favicon.ico" type="image/x-icon">
+        
+        <title>Tomas HEI</title>
+        <meta name="description" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">    
+        
+        <meta name="keywords" content="UX, UI, User Experience, Design, Product, Architecture, Architect, Tomas, HEI, Czarnecki">
+        <meta name="author" content="Tomas HEI Czarnecki">
+        
+        <!--Google-->
+        <meta itemprop="name" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">
+        <meta itemprop="description" content="UX Designer">
+        <meta itemprop="image" content="http://heiux.com/styles/img/social-share-img-v1.jpg">
+            
+        <!--Facebook-->    
+        <meta property="og:title" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://heiux.com"/>
+        <meta property="og:image" content="http://heiux.com/styles/img/social-share-img-v1.jpg"/>
+        <meta property="og:description" content="UX Designer"/>
+
+        <link rel="stylesheet" href="styles/css/style_scroll.css">        
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/menu_hamburger.css">
+        <link rel="stylesheet" href="styles/css/style_animation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/style_media.css">
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMNBFW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- START: Progress BAR -->
+<div class="line" id="scrollIndicator"></div>
+
+<!-- START: Navigation -->
+<nav>
+        <div class="myNav wrapper">
+            <a href="index.html"><img src="styles/img/Logo_HEI_Dark.svg"/></a>
+            <div id="menuHamburger" class="menuDark"> 		
+                    <input type="checkbox">
+                    <!-- <div id="menushadow"></div> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>	
+                    <ul id="menu">
+                        <li class="imgXS"><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolioUX">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/Resume_TomasHEI.pdf" target="_blank">Resume</a></li>   
+                        <li><a href="contact.html"><button class="btn1 btn-menu">Contact</button></a></li>
+                    </ul>
+            </div>
+        </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- Hero Content -->
+<article id="homeHero" class="bgGreenLight myHero-MarginTop">
+        <div class="wrapper">
+                <div class="portfolioHeroUX">
+                      
+                        <div class="portfolioHeroText">
+                                <h1 class="hPortfolio">01</h1>
+                                <h1>Open Reminder</h1>
+                                <h2 class="">UX Process</h2>
+                                <p class="pBig"><span class="pDark"></span>
+                                        A redesign case-study of an open-source Pill Reminder for Android. The following section describes a comprehensive UX process undertaken to increase usability.
+                                </p>
+                                <!-- <img src="styles/img/portfolioUX/hero_1.jpg"> -->
+                                <a href="portfolioUI_0.html"><button class="btn2">See UI Design Concept</button></a>
+                        </div>
+                        <div class="">
+                                <img class="portfolioHeroImg" src="styles/img/portfolioUX/hero_1.jpg">
+                        </div>  
+                </div>
+</div>
+</article>
+
+
+
+<!-- MAIN CONTENT -->
+<article id="designProcess">
+        <div class="wrapper">
+                <div class="portfolioDetails">
+                        <div>
+                                <h4>My Role</h4>
+                                <p>User Research<br>
+                                UX Design<br>
+                                Prototyping</p>
+                        </div>
+                        <div>
+                                <h4>Platform</h4>
+                                <p>Android<br>
+                                (Open Source)</p>
+                        </div>
+                        <div>
+                                <h4>Tools</h4>
+                                <p>Pen & Paper<br>
+                                Whiteboard<br>
+                                Cart Sorting<br>
+                                Adobe XD</p>
+                        </div>
+                        <div>
+                                <h4>Timeline</h4>
+                                <p>Jan. 2020<br>
+                                Feb. 2020</p>
+                        </div>
+
+                </div>
+        </div>  
+</article>
+
+<!-- **************** -->
+<!-- CONTENT ARTICLES -->
+<!-- **************** -->
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+
+                <h3>About Pill Reminder</h3>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The following case study describes my attempt to create a redesign of an open-source Pill Remainder application for Android called <a href="https://github.com/jclehner/rxdroid" target="_blank">RxDroid</a>. I had chosen an <span class="pDark">open-source</span> application for very utilitarian reasons. Many people transferring to UX Design from other disciplines decide to try to redesign very popular and successful digital products. Others try to design conceptual applications from scratch, I do not say it is a bad approach. Everone's resources are precious. My humble intention was to learn, gather experience and in the meantime <span class="pDark">contribute</span> something meaningful to the community.                         
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/000_RXDroid.png" alt="">
+                <p>Screenshots of the current version of RxDroid.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Open-source applications have a long <span class="pDark">reputation</span> for being very technical, often designed and maintained by geeks for other geeks. It is of course only partially true and there are many great examples of excellent applications for the wider group of users. It is, however true that for some reasons not many open-source applications have the opportunity to incorporate <span class="pDark">fully-fledged</span> UX processes into their development.
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+
+                <h3>The Design Process</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>                        
+                        &nbsp; &nbsp; During this study, I followed the <span class="pDark">Double Diamond</span> process created by Design Council. It has a great number of advantaged allowing to organize design and to prevent the designer from achieving random results. On the other hand, the relationship between <span class="pDark">diverging</span> and <span class="pDark">converging</span> phases is agile enough to be easily adjusted to specific design needs. I believe that each design is different, and for each project, slightly different methodologies should be used. The framework, however always stays the same.     
+                <br></p>
+
+                <img class="articleImg imgXS" src="styles/img/diagrams/designProcess_Mobile.svg" alt="">
+                <img class="articleImgSmall imgM" src="styles/img/diagrams/designProcess.svg" alt="">
+                <p>The "core" Double Diamond design process.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; Below I am presenting a list of methodologies/tools used during the following UX process: 
+                </p>
+
+                        
+                        <h5 class="pMargin">                                
+                                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                                <a href="#Discover">Discover</a></h5>
+                        <ul class="pList pListSmall pMargin">
+                                <li>Deconstructing Existing Design</li>
+                                <li>Target User Group</li>
+                                <li>Guerrilla Testing Original Design</li>
+                                <li>Key Problem Areas</li>
+                                <li>Competitor Analysis</li>
+                                <li>User Research</li>
+                        </ul><br>
+
+                        <h5 class="pMargin">
+                                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                                <a href="#Define">Define</a></h5>
+                        <ul class="pList pListSmall pMargin">
+                                <li>Generating Insights</li>
+                                <li>Insights Clustering</li>
+                                <li>Identifying Top Findings</li>
+                                <li>"How Might We" Questions</li>
+                                <li>"HMW" Questions Clustering</li>
+                                <li>Creating Persona</li>
+                        </ul><br>
+
+                        <h5 class="pMargin">
+                                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                                <a href="#Develop">Develop</a></h5>
+                        <ul class="pList pListSmall pMargin">
+                                <li>Brainstorming</li>
+                                <li>Exploring Beyond Domain</li>
+                                <li>Sketching: Pen & Paper</li>
+                                <li>Value Versus Effort</li>
+                                <li>User Flows</li>
+                                <li>Screen Flows</li>
+                        </ul><br>
+
+                        <h5 class="pMargin">
+                                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_4.svg" alt="">
+                                <a href="#Deliver">Deliver</a></h5>
+                        <ul class="pList pListSmall pMargin">
+                                <li>Early Wireframes</li>
+                                <li>Late Wireframes</li>
+                                <li>Interactive Prototype</li>
+                                <li>Testing Prototype</li>
+                        </ul><br> 
+
+                        <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                                &nbsp; &nbsp; To be frank, a <span class="pDark">redesign is never really done</span>, it is a continuous effort to keep the <span class="pDark">digital product relevant</span>. Therefore, what I am presenting below is only one small step in the long, complex process. 
+                        <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h3>Nothing is Granted</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; From my previous work experience as an Architect, I learned that nothing is <span class="pDark">truly granted</span> in the design process. They are always different parties having often <span class="pDark">contradictory requirements</span>.                    
+                <br></p>
+
+                <img class="articleImg imgXS" src="styles/img/portfolioUX/001_WhatUsersNeed.svg" alt="">
+                <img class="articleImgSmall imgM" src="styles/img/portfolioUX/001_WhatUsersNeed_M.svg" alt="">
+                <p>A simple diagram presenting often contradicting requirements.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>                        
+                        &nbsp; &nbsp; It is why since the begining, I assumed that all my assumptions are wrong. I wanted to listen and talk to <span class="pDark">users</span>, and in the next phases build a possibly <span class="pDark">unbiased understanding</span> of their real needs. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight" id="Discover">
+        <div class="wrapper center wrapper-margin">
+                <h1>Discover</h1><br>
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>Deconstructing Existing Design</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I started the first diverging phase of design by deconstructing existing design into <span class="pDark">components</span>. I intended to understand the functionality and existing user flows.                  
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/002_DeconstructingExistingDesign.svg" alt="">
+                <p>An existing home screen of RxDroid.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; I wanted to understand how the application works, so in the next phase, I could conduct simple guerrilla tests with a target group.  
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>Target User Group</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Unfortunately, I did not have access to any <span class="pDark">existing analytics</span>. Therefore I had to begin with research. I based the application's target group demographic on: <a href="https://www.marketingcharts.com/digital-110439" target="_blank">2019 Tech Update: Mobile and Social Media Usage, by Generation</a>. I assumed that the <span class="pDark">Baby Boomers</span> generation - people aged between <span class="pDark">55-73</span> are the most likely to use Pill Reminder application in their daily life.                 
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/003_Demographic.svg" alt="">
+                <p>Target audience technology immersion.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Users younger than 55 years old tend to be in <span class="pDark">good health</span>, and they very rarely think about the need to remember about medications. While users older than 73 years old, much less likely to own a smartphone or tablet computer. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>Guerrilla Testing Original Design</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The next step in the <span class="pDark">design process</span> was to understand what users felt and how does the original design worked for the target user group. I planned a direct guerrilla testing session in my town.                      
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/003_TestingOrginalDesign.jpg" alt="">
+                <p>A 59 years old user playing with interface.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; To achieve this, I visited the local 3rd Age University and asked the <span class="pDark">random group</span> of 10 users to spend five minutes solvingsimple tasks using the existing design. At this stage, I was surprised by how willing people were to participate in testing sessions. The <span class="pDark">biggest issue</span> I had was not to find new participants but to politely finish the testing sessions.                       
+                <br></p>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/004_TestingExistingDesign.svg" alt="">
+                <p>Results of the guerrilla user testing session.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; From the guerrilla testing session, I learned that <span class="pDark">some tasks</span> were particularly harder compared to other ones. I also asked users a set of <span class="pDark">open-ended questions</span> to identify Key Problem Areas, that I am going to describe in the following paragraphs.                 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>Key Problem Areas</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; After the guerrilla testing of the existing design, I had an opportunity to identify key problem areas. They were based on the open questions asked to the users and my understanding of <span class="pDark">usability heuristics</span>.               
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/005_KeyProblemAreas.svg" alt="">
+                <p>Summarised problem areas of the home screen.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I undertake a similar exercise for all of the application's screens. Before attempting to <span class="pDark">design anything</span> by my self I wanted to understand as much as I could how does the existing design work.
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>Competitor Analysis</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In the next phase, I conducted a competitive analysis. I read reviews and installed a group of <span class="pDark">selected applications</span> on my phone. Below I am presenting home screens of a few most interesting ones.                     
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/006_Competition.png" alt="">
+                <p>Selected competitors with their logos.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; From the competitive analysis, I learned that there are generally <span class="pDark">two types</span> of pill reminder applications. One targeting patients, who need to intake medications regularly. The second group contains women, taking birth control pills.
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_1.svg" alt="">
+                <h3>User Research</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The most important part of the <span class="pDark">Discover Phase</span> was user research. It is crucial for every project to learn about and with users. Before a series of interviews at the local 3rd Age University, I prepared a chart containing <span class="pDark">9 steps</span>.          
+                <br></p>
+
+                <h5 class="pMargin">User Research Steps</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>Client Research</li>
+                        <li>Competitors</li>
+                        <li>Logo Ideas</li>
+                        <li>Dominant Colors</li>
+                        <li>Brand Research</li>
+                        <li>Journey Map</li>
+                        <li>Sacrificial Concepts</li>
+                        <li>Existing App </li>
+                        <li>User Ideas</li>
+                </ol><br>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/007_UserResearch.jpg" alt="">
+                <p>An example of a filled user research chart. </p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I interviewed <span class="pDark">10 users</span> aged 59 to 72. Every interview session was recorded, in order to recall information afterward. User Interviews also finished Discover Phase, it was time to <span class="pDark">converge gathered information</span>. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight" id="Define">
+        <div class="wrapper center wrapper-margin">
+                <h1>Define</h1><br>
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>Generating Insights</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The Define Phase started with <span class="pDark">analyzing</span> the information gathered during the interview sessions. I decided to divide insights into 3 mayor categories.            
+                <br></p>
+
+                <h5 class="pMargin">Insights Categories</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>Personal</li>
+                        <li>Application</li>
+                        <li>User's Habits</li>
+                </ol><br>
+
+                <img class="articleImg" src="styles/img/portfolioUX/008_GatheringInsights2.jpg" alt="">
+                <p>A whiteboard containing part of generated insights.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Each category obtained <span class="pDark">separated color</span> and described different domains of the user's experience. I also learned that <span class="pDark">some questions</span>, like asking users to draw ideas for a logo design did not yield any results.                        
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>Insights Clustering</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In the next phase, generated insights were grouped into 10 clusters. <span class="pDark">Each cluster contained similar</span> users' problems or expectations.              
+                <br></p>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/008_InsightsClustering.jpg" alt="">
+                <p>A whiteboard during the Insights Clustering phase.</p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>Identifying Top Findings</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The 10 clustered insights were subsequently organized into the Top Findings. They are <span class="pDark">10 really important matters</span> for the users. All of the Top Findings were supported by two user quotations recalled from recorded interviews.             
+                <br></p>
+
+                <h5 class="pMargin">Top Findings</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>People need help to remember.</li>
+                        <li>The app should be friendly.</li>
+                        <li>The app should organize all health data. </li>
+                        <li>The app should be easy to use. </li>
+                        <li>People do not like to be disturbed.</li>
+                        <li>Elderly people are lonely.</li>
+                        <li>Taking pills on time is crucial.</li>
+                        <li>People want awards.</li>
+                        <li>The app should protect privacy.</li>
+                        <li>The app should help in an emergency.</li>
+                </ol><br>
+
+                <img class="articleImg" src="styles/img/portfolioUX/009_TopFindings.png" alt="">
+                <p>Top Findings with quotations.</p>
+
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>"How Might We"<br>Questions</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; For each of the 10 Top Findings, I started to ask <span class="pDark">"How Might We..."</span> Questions. I wanted to be concrete enough to give a good starting point for future brainstorming, based on these questions.              
+                <br></p>
+
+                <img class="articleImg" src="styles/img/portfolioUX/010_HWMQuestions.jpg" alt="">
+                <p>"HMW..." Questions in relation to the Top Findings. </p>
+
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>"HMW" Questions<br>Clustering</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In the next phase, questions were <span class="pDark">clustered</span> into <span class="pDark">3 Opportunity Areas</span> and <span class="pDark">3 Design Principles</span>. Opportunity Areas will be used during a brainstorming session for ideation. While Design Principles, on the contrary, will evaluate results.              
+                <br></p>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/010_HWMQuestionsClustering0.jpg" alt="">
+
+                <h5 class="pMargin">Opportunity Areas:</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>Build a personal health assistant.</li>
+                        <li>Give an opportunity to build friendships.</li>
+                        <li>Give users some joy.</li>
+                </ol><br>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/010_HWMQuestionsClustering1.png" alt="">
+                <p>Opportunity Areas and their links to Top Findings.</p>
+
+                <h5 class="pMargin">Design Principles:</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>Make the app natural to use.</li>
+                        <li>Help in an emergency.</li>
+                        <li>Keep health data private.</li>
+                </ol><br>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/010_HWMQuestionsClustering2.png" alt="">
+                <p>Design Principles and their links to Top Findings.</p>
+
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_2.svg" alt="">
+                <h3>Creating Persona</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The final step of the <span class="pDark">Define Phase</span> was to create a Persona. An imagiary user, <span class="pDark">who averages</span> all mayor personality traits, goals and frustrations of previously interviewed real users. The key role if the Persona is to <span class="pDark">keep reminding</span> all of the stakeholders for whom are they building a product. She was printed and handed on the whiteboard.             
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/011_Persona.png" alt="">
+                <p>Sabina the Grandmother - the Persona.</p>
+
+        </div>   
+</article>
+
+<article class="bgGrayLight" id="Develop">
+        <div class="wrapper center wrapper-margin">
+                <h1>Develop</h1><br>
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>Brainstorming</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The Develop Phase started with brainstorming. I <span class="pDark">gathered</span> some of the users who participated in the previous user testing sessions, they were playing the roles of stakeholders. Together we <span class="pDark">organized</span> 30 minutes long brainstorming meeting to generate as many creative ideas as it was possible. During the brainstorming, we were answering questions based on <span class="pDark">Opportunity Areas</span>.                  
+                <br></p>
+
+                <h5 class="pMargin">How Might We:</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>build a personal health assistant.</li>
+                        <li>give an opportunity to build friendships.</li>
+                        <li>give users some joy.</li>
+                </ol><br>
+
+                
+                <img class="articleImgSmall" src="styles/img/portfolioUX/012_Brainstorming.jpg" alt="">
+                <p>Results of the brainstorming session.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The results of the brainstorming were later evaluated by answering HWM Questions based on <span class="pDark">Design Principles</span>.
+                <br></p>
+
+                <h5 class="pMargin">How Might We:</h5>
+                <ol class="pList pListSmall pMargin">
+                        <li>make the app natural to use.</li>
+                        <li>help in an emergency.</li>
+                        <li>keep health data private.</li>
+                </ol><br>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>Exploring Beyond Domain</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I believe that <span class="pDark">innovation</span> never comes from the competitor analysis, what you can learn from your competitors are the <span class="pDark">industry standards</span>. It is why I started to explore products beyond my domain, other digital products solving similar problems in a different context.                    
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/020_ExploreBeyondDomain.png" alt="">
+                <p>Examples of other digital products solving related problems.</p>
+
+        </div>   
+</article>
+
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>Sketching: Pen & Paper</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In the next phase, I began to sketch on paper. <span class="pDark">Sketching</span> with a pen is the most effective way of transferring muddled ideas in the brain to become a reality. This the most primitive designing tool has a great advantage, it is so <span class="pDark">natural</span> for humans to use the pen, that there is almost nothing to limit our <span class="pDark">creativity</span>.            
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/015_Sketching.jpg" alt="">
+                <p>Some of the UI sketches created during Pen & Paper sessions.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; It is why, I sketched screens, UI elements, user flows, screen flows creating a bunch of ideas. As a next step, I evaluated sketched ideas, to create a <span class="pDark">holistic concept</span> of the user experience.
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>Value Versus Effort</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; After generating a lot of <span class="pDark">ideas</span> during brainstorming and sketching sessions I decided to provide a "Value versus Effort" evaluation. I <span class="pDark">empathized</span> with Persona: Sabina the Grandmother, and tried to understand which functionalities would be the <span class="pDark">most important</span> for her.            
+                <br></p>
+
+                <h5 class="pMargin">Selected Functionalities:</h5>
+                <ul class="pList pListSmall pMargin">
+                        <li>Medication Reminders</li>
+                        <li>Medications List</li>
+                        <li>Measurement Reminders</li>
+                        <li>Measurements List</li>
+                        <li>Doctor Visit Reminders</li>
+                        <li>Doctors List</li>
+                        <li>Reminder Statistics</li>
+                        <li>Steps Counter</li>
+                        <li>Garden Mini Game</li>
+                        <li>Nearby Gardens</li>
+                        <li>Garden Comments</li>
+                        <li>PIN Protection</li>
+                        <li>Settings</li>
+                        <li>Login/Signin</li>
+                </ul><br>
+
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/015_ValueVSEffort.svg" alt="">
+                <p>Some of the UI sketches created during Pen & Paper sessions.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; In the next step, I opposed the value of functionalities to how <span class="pDark">feasible building</span> each of them would be. This action created a clear diagram, which functionalities should be <span class="pDark">prioritized</span>. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>User Flows</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Simuntinausly to sketching, I was developing <span class="pDark">User Flows</span>. I based my ideas on answers to "HWM" Questions, prepared during brainstorming. I was empathizing with situations that users could <span class="pDark">find themself in</span> Trying to understand what they could want and need to achieve.              
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/015_UserFlow1.png" alt="">
+                <p>User Flow: Add a new medication to the list.</p>
+
+                <img class="articleImg" src="styles/img/portfolioUX/015_UserFlow4.png" alt="">
+                <p>User Flow: Add a new doctor visit.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; User Flows helped me to understand the <span class="pDark">holistic idea</span> of the application I was designing. It was a very important intermediate step before creating Screen Flows. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_3.svg" alt="">
+                <h3>Screen Flows</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Screen Flows are a <span class="pDark">crucial step</span> before building wireframes and interactive prototypes. They are easy to produce and change, they allow the designer to iterate quickly. They are also very easy to be <span class="pDark">understood</span> and review by a variety of stakeholders.           
+                <br></p>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/016_ScreenFlow2.jpg" alt="">
+                <p>Conceptual Screen Flows on the whiteboard.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I started creating <span class="pDark">Screen Flows</span> using conceptual sketches produced in the previous phase using Pen & Paper. I was sticking them on the <span class="pDark">whiteboard</span> and trying to find a relationship that could provide a good user experience. During the process, I <span class="pDark">shared</span> my concepts with users that I had the opportunity to interview before. I used their opinions as stakeholders' reviews. 
+                <br></p>
+
+                <img class="articleImg" src="styles/img/portfolioUX/016_ScreenFlow1.png" alt="">
+                <p>A digitalized iteration of the Screen Flows.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The final version of Screen Flows was <span class="pDark">digitalized</span>, for easy reviews and sharing. At that time I was confident to use colors and shades to make them more visually pleasing. I was about to learn in the next step, that making things visually pleasing is not always the best idea to <span class="pDark">recieve unbiased feedback</span>.
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgGrayLight" id="Deliver">
+        <div class="wrapper center wrapper-margin">
+                <h1>Deliver</h1><br>
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_4.svg" alt="">
+                <h3>Early Wireframes</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; After the long research phase, brainstorming and clustering ideas creating <span class="pDark">wireframes</span> is a step that I believe every designer waits for.  It is a <span class="pDark">rewarding culmination</span> of the process. It is why I started generating early wireframes with great enthusiasm.                
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/018_EarlyWireframes.png" alt="">
+                <p>Too polished wireframes, looking almost like finished UI.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; <span class="pDark">The bitter lesson</span> was about to come very soon. I began to arrange micro-interviews with users, I intended to review my ideas early and iterate quickly. After the first 5 interviews, I did not receive any useful feedback. My users were <span class="pDark">fixating</span> about colors, icons, fonts, and the profile picture. No one could focus and talk about functions and features. I quickly understood that my wireframes were <span class="pDark">too polished</span>, too color-rich.
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_4.svg" alt="">
+                <h3>Late Wireframes</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I am not calling this section "Finished Wireframes", for a simple reason: designing digital products is never a <span class="pDark">finished process</span>. Even when the product is ready for release there are always <span class="pDark">opportunities for improvement</span>. Failure is definitely one of them. I learned that wireframes should RAW, colorless, technically the rawer the better. It is why I updated my concept and get back to the users.            
+                <br></p>
+                <img class="articleImg" src="styles/img/portfolioUX/019_EarlyWireframes.png" alt="">
+                <p>Updated RAW wireframes.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; This time micro-interviews went differently. Users somehow felt that what I was presenting to them was <span class="pDark">only a prototype</span>. They did not hasitate to criticise and give <span class="pDark">their own ideas</span>. We could talk about functionality and features. I geathered great amount of useful information, and updated wireframes one more time. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_4.svg" alt="">
+                <h3>Interactive Prototype</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Simuntionusly to wireframes I was developing an <span class="pDark">interactive prototype</span>. Adobe XD has a great feature allowing to design screens and to prototype seamlessly. Every even the smallest change in the design could be very quickly reviewed in <span class="pDark">deeper context</span> of interaction between screens.
+                <br></p>
+
+                <img class="articleImgXS" src="styles/img/portfolioUX/021_Prototype1.gif" alt="">
+                <p>Simple interactions between screens.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I was designing more screens, and more relationships, sometimes micro-testing with target user group at 3rd Age University. At this stage, I did a lot of <span class="pDark">micro-testinng</span> with just 2-3 tests every few days. Then review test results, iterate and prepare an updated version of the wireframes.              
+                <br></p>
+
+                <img class="articleImgSmall" src="styles/img/portfolioUX/021_Prorotype2.jpg" alt="">
+                <p>Prototyping window in Adobe XD.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; When I felt the prototype was <span class="pDark">mature enought</span>, I decided to arrange bigger <span class="pDark">moderated testing</span> session to evaluate my these.               
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <img class="articleImgDiamond" src="styles/img/portfolioUX/000_Diamond_4.svg" alt="">
+                <h3>Testing Prototype</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; To test the matured prototype, I contacted the group of <span class="pDark">10 users</span>. I meet before during guerrilla testing of the original design. To benchmark my design I gave them the <span class="pDark">same tasks</span>, like before. Because the functionality of the application was extended, I also designed a few new tasks.
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUX/022_TestingPrototype.svg" alt="">
+                <p>* Take all meditations functionality was removed. </p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; After comparing results of both <span class="pDark">testing sessions</span> I was able to benchmark my design and with <span class="pDark">confidence</span> finish this iteration of the UX Design Process. 
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>Conclusions</h1>
+                <h3>There is Always Space for Improvement</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The design process technically <span class="pDark">never finishes</span>. There are always new tools to be used, new technologies constantly emerge, patterns change. Therefore UX Designers should <span class="pDark">constantly learn</span> and broaden their knowledge. <span class="pDark">Learning is never finished process as well.</span>                
+                <br></p>
+
+                <h5 class="pMargin">What did I learn?</h5>
+                <ol class="pList pListSmall pMargin"><span class="pDark"></span>
+                        <li>Users are generally willing to share their opinions and talk about their feelings. The tricky part is to <span class="pDark">moderate interviews well</span>, so the small talk is limited to the necessary minimum.</li>
+                        <li>Exploring beyond domain is <span class="pDark">crucial for innovation</span>. I believe that looking for inspiration in different fields is very important. Similar problems to our own could be already solved in a slightly different context.</li>
+                        <li>The first idea is rarely the best. <span class="pDark">Sketching on paper is important.</span> I believe the more ideas are transferred onto paper, the higher the chance is to create an innovative product.</li>
+                        <li><span class="pDark">Wireframes should be RAW.</span> I learned the more unpolished the wireframes look like, the more likely users are to give constructive feedback.</li>
+                        <li>Designers should also consider <span class="pDark">removing unnecessary features</span>. There is a tendency in the industry to develop products by adding new features, but it is not always the best solution. Sometimes simplification could also increase usability.</li>
+                </ol><br>
+
+                <h5 class="pMargin">What could be improved?</h5>
+                <ol class="pList pListSmall pMargin"><span class="pDark"></span>
+                        <li>Brainstorming: by introducing some simple relaxing games. Stakeholders and users are often afraid of being <span class="pDark">stigmatized by making wrong decisions</span> or looking stupid. It is very important to show people that during brainstorming sessions there are no bad ideas.</li>
+                        <li><span class="pDark">The process itself could be improved.</span> There are always new techniques that could be introduced to the process. I should work to improve the techniques of digitizing analog resources. </li>
+                </ol><br>
+
+                <!-- <img class="articleImg" src="styles/img/portfolioUX/17_SpaceForImprovement.jpg" alt=""> -->
+        </div>   
+</article>
+
+
+<article class="bgOrangeLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>The Next Step</h1>
+                <h3>UI Design</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The best design <span class="pDark">presented poorly</span> will never attract attention. It is very important to <span class="pDark">present digital products properly</span>, with colorful high-quality images. In <a href="portfolioUI_0.html">the second part</a> of this article, I am attempting to sell my concept.
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/hero_1.jpg" alt=""> -->
+                <img class="articleImgSmall" src="styles/img/portfolioUI/000_SellYourDesign.jpg" alt="">
+                <!-- <p>UI Screens in mockups.</p> -->
+
+                <a href="portfolioUI_0.html"><button class="btn1">See UI Design Concept</button></a>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; <span class="pDark">Thank you for your time</span>, if you have any questions or ideas how could I improve my <span class="pDark">UX Process</span>. Please do not hesitate to contact me, I am always willing to receive constructive feedback.                 
+                <br></p>
+
+                <a href="contact.html"><button class="btn2">Visit Contact Page</button></a>
+
+
+                <br><br><br>
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div>
+        </div>   
+</article>
+
+<!-- Start FOOTER -->
+<footer class="bgDark">
+        <div class="wrapper center">
+                <h4>Get in touch</h4><br>
+                <h1>Let's work together</h1>
+                <p class="pMargin">
+                        If you have an online business or mobile app idea in your mind or you need some creative advice about product design, please feel free to contact me.  
+                </p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p>Reply Time: within 1-2 working days</p>
+                </div></a><br>
+                
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Let's work together</button></a><br>
+                <div class="mySocial">
+                        <a target="_blank" href="mailto:tomas@heiux.com"><img src="styles/img/icons/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/tczarnecki/"><img src="styles/img/icons/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/tomas_hei/"><img src="styles/img/icons/instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://medium.com/@tomasz_czarnecki"><img src="styles/img/icons/medium.svg" alt=""></a>
+                        <!-- <a target="_blank" href="https://github.com/tomashei"><img src="styles/img/icons/github.svg" alt=""></a> -->
+                        <a target="_blank" href="https://dribbble.com/tomas_hei"><img src="styles/img/icons/dribbble.svg" alt=""></a>
+                </div>
+                <p class="pMargin pSmall">
+                        © 2020 All rights reserved.<br><span class="pLight"><a href="mailto:tomas@heiux.com">Designed & Coded by Tomas HEI</a></span>
+                </p>
+        </div>
+</footer>
+
+
+<!-- <input type="range" min="1" max="60" value="20" oninput="moveSlider(this, 'x')"/>
+<input type="range" min="1" max="40" value="10" oninput="moveSlider2(this, 'y')"/> -->
+
+<script src="styles/javascript/script.js"></script>
+<!-- <script src="script_scroll.js"></script>
+<script src="style_imagesscroll.js"></script>
+<script src="script_touchswipe.js"></script> -->
+
+<script src="styles/javascript/sript_scroll.js"></script>
+
+
+</body>
+</html>

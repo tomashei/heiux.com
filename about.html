@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <!--
+                Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+                Fair is fair. Answers on a postcard, please ;-)						
+                        
+                Start.	
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+                8   8               8               8           8                   8   8
+                8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+                8               8       8   8           8           8   8   8       8   8
+                8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+                8       8   8               8           8   8   8   8   8           8   8
+                8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+                8   8               8   8   8       8           8           8       8   8
+                8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+                8           8       8   8       8   8       8           8   8           8
+                8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+                8       8       8   8   8       8       8       8   8   8       8       8
+                8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+                8           8   8           8       8   8       8   8       8           8
+                8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+                8   8       8           8           8       8   8   8               8   8
+                8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+                8   8           8   8   8   8   8           8               8   8       8
+                8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+                8   8       8   8   8           8           8   8       8               8
+                8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+                8   8                   8           8               8               8   8
+                8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+                End.
+                -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156160652-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-156160652-1');
+        </script>
+        <!-- Google Analytics: END -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NMMNBFW');</script>
+        <!-- End Google Tag Manager -->    
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="canonical" href="https://heiux.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="styles/img/favicon.ico" type="image/x-icon">
+        
+        <title>Tomas HEI</title>
+        <meta name="description" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">    
+        
+        <meta name="keywords" content="UX, UI, User Experience, Design, Product, Architecture, Architect, Tomas, HEI, Czarnecki">
+        <meta name="author" content="Tomas HEI Czarnecki">
+        
+        <!--Google-->
+        <meta itemprop="name" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">
+        <meta itemprop="description" content="UX Designer">
+        <meta itemprop="image" content="http://heiux.com/styles/img/social-share-img-v1.jpg">
+            
+        <!--Facebook-->    
+        <meta property="og:title" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://heiux.com"/>
+        <meta property="og:image" content="http://heiux.com/styles/img/social-share-img-v1.jpg"/>
+        <meta property="og:description" content="UX Designer"/>
+
+        <link rel="stylesheet" href="styles/css/style_scroll.css">          
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/menu_hamburger.css">
+        <link rel="stylesheet" href="styles/css/style_animation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/style_media.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMNBFW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- START: Progress BAR -->
+<div class="line" id="scrollIndicator"></div>
+
+<!-- START: Navigation -->
+<nav>
+        <div class="myNav wrapper">
+            <a href="index.html"><img src="styles/img/Logo_HEI_Dark.svg"/></a>
+            <div id="menuHamburger" class="menuDark"> 		
+                    <input type="checkbox">
+                    <!-- <div id="menushadow"></div> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>	
+                    <ul id="menu">
+                        <li class="imgXS"><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolioUX">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/Resume_TomasHEI.pdf" target="_blank">Resume</a></li>   
+                        <li><a href="contact.html"><button class="btn1 btn-menu">Contact</button></a></li>
+                    </ul>
+            </div>
+        </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- Hero Content -->
+<article id="homeHero" class="bgBlue myHero-MarginTop">
+        <div class="wrapper ">  
+                <div class="portfolioHeroUX">
+
+                        <div class="portfolioHeroText">
+                                <!-- <h2><span class="h2Red">Nice to meet you</span></h2> -->
+                                <h1>Hi there,<br>I am Tomas</h1>
+                                <h2>
+                                        I work as a <span class="h2Red">UX designer</span>.<br> My mission is to create <span class="h2Red">logical experiences</span> combining user and business needs. 
+                                </h2>
+                                <p>
+                                        <a href="assets/Resume_TomasHEI.pdf" target="_blank" class="portfolioButton"><button class="btn1">Download resume</button></a>
+                                        <!-- <a href="#mySummary" class="portfolioButton"><button class="btn2">Skip to summary</button></a> -->
+                                </p>
+                                
+                        </div>
+                        <div class="imgXS portfolioHeroImg">
+                                <img id="portfolioHeroSmallImage" src="styles/img/myPicture_SMALL.jpg">
+                        </div> 
+                        <div class="imgM portfolioHeroImg">
+                                <img src="styles/img/myPicture_BIG.jpg">
+                        </div> 
+
+
+                </div>
+        </div> 
+ 
+<!-- 
+    <div class="bgNoise"></div>
+    <div class="bgBluePrint"></div> -->
+
+        <!-- <div class="Arrow_Down">
+                <a href="#designProcess"><img src="styles/img/Arrow_Down_Dark.svg" alt=""></a>
+        </div> -->
+        
+</article>
+
+<!-- Start Article Content -->
+<article class="bgWhite">
+        <div class="wrapper wrapper-margin center">
+                <h1>My way to UX</h1>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; My way to <span class="pDark">User Experience Design</span> was not straightforward. It was a <span class="pDark">long</span> and <span class="pDark">complex</span> process that allowed me to <span class="pDark">build my skill-set</span>, learn empathy, gather multicultural proficiency and find my true passion.<br><br>
+                </p><br>
+
+                <div class="myWayUX">
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_A.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">01</span> Computer Science</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; My first motivation is IT. I started my higher education at the Computer Science faculty, where I gathered basics knowledge of programming and crucial skill for my future career: <span class="pDark">algorithmic thinking</span>. After two semesters I decided to move forward and I passed a drawing exam to Architecture Faculty. 
+                                        </p>
+                                </div> 
+                        </div>
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_B.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">02</span> Architecture</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; My second motivation is Design. I obtained a Master’s Degree in Architecture and Urban Planning. But the most crucial was a year when I was an exchange student in Istanbul. There I meet a mentor who change my life: prof. Ozan Önder Özener. He thought me the basics of Computational Design, a field of design using algorithms to generate parametric geometries. 
+                                        </p>
+                                </div> 
+                        </div>
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_C.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">03</span> PhD Studies</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; Computational Design became the major topic of my Master’s Thesis and subsequently mayor field of Ph.D. research. I was teaching junior students basics while polishing my skill-set. Then, after one year another milestone happened, I got a job offer from one of the most influential architects of our time: Ma Yansong, founder of MAD Architects from Beijing. It was like winning a lottery.
+                                        </p>
+                                </div> 
+                        </div>
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_D.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">04</span> Parametric Design</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; In April 2015, I borrowed money for one way ticket to China. Before moving to the Middle Kingdom, I already studied the basics of Mandarin for about one year. At MAD Architects, I was part of a team developing one of the most influential architectural projects of the XXI century: Harbin Opera House. I built life-lasting impactful friendships with peers all around the world and met my wife to be. 
+                                        </p>
+                                </div> 
+                        </div>
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_E.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">05</span> Project Leader</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; After two years of experiencing harsh air quality in Beijing, with my fiancée we decided to move to Guizhou a historical province of eternal spring. My proficiency in Chinese increased rapidly and I accepted an offer as a project leader at the local design institute. I successfully led a team containing 10 Mandarin-only speaking designers. 
+                                        </p>
+                                </div> 
+                        </div>
+                        <div class="myWayUXitem"> 
+                                <img class="imgXS" src="styles/img/diagrams/myWayToUX_XS_F.svg" alt=""> 
+                                <div>
+                                        <h2><span class="myWayUXnumber myWayUXShowM">06</span> UX Design</h2>
+                                        <p class="pArticle"><span class="pDark"></span>
+                                                &nbsp; &nbsp; My third motivation is humanity. After years of searching, I finally found a field that connects all three stimuli into one fascinating being, and it is User Experience. After watching  practical and theoretical tutorials, studying influential books and practicing with smaller projects I am ready to move forward...
+                                        </p>
+                                </div> 
+                        </div>
+                        
+                        <img class="myWayToUX_Image imgM" src="styles/img/diagrams/myWayToUX_M.svg" alt="">
+                </div>       
+
+                <br>
+                <p class="pBig pMargin">
+                        If you have any questions, how or want to know something more about<br><span class="pDark">my way to UX</span> please do not hesitate to send me a message: 
+                </p>
+
+                <p class="pMargin">
+                        <a href="mailto:tomas@heiux.com"><button class="btn1">Send me a message</button></a> 
+                </p>
+
+
+        </div>
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper wrapper-margin center">
+                <h4>The story begins</h4>
+                <h3>Intersection of Programming,<br>Design and Adventure</h3>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; It was around 2007 when I for the first time heard term <span class="pDark h2Red">usability</span>, but at that time I was not ready for becoming UX Designer. I was then a <span class="pDark">computer science</span> student and I treated it as a <span class="pDark">curiosity</span>. I was simply too absorbed by studying algorithms and programming languages to see the world from the perspective of users.<br><br>
+
+                        &nbsp; &nbsp; One year later, I made an important decision to abandon computer science and I was accepted by an <span class="pDark">architecture faculty</span>. I had a feeling that computer science was too technical. My mission was always to <span class="pDark"></span>create good for people, it is why that time I did many <span class="pDark">charity works</span>. I helped homeless, poor and rejected people. During this time as an <span class="pDark">architecture student</span>, I started to see the world from the perspective of users, and I began to ask myself <span class="pDark">questions</span>. How would people feel inside this space? How would it work for people? How space could influence emotions?<br><br>
+                </p>
+
+                <img class="articleImg" src="styles/img/architecture/Istanbul_Flower.jpg" alt="">
+                <p class="pMargin">My magic flower: Oxalis Triangularis starting to bloom in Istanbul, 2011.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The next milestone happened when I was accepted as an international exchange student by the <span class="pDark">Istanbul</span> Technical University. I spent the second year of my master's degree in this ancient city, where for centuries eastern culture met the western one. That time I took a <span class="pDark">great effort</span> to study the Turkish language. When my flatmates and friends went for parties, I was sitting in my room and constantly repeat Turkish lessons. After one year I was capable of speaking Turkish relatively fluent, and it was somehow <span class="pDark">a great achievement</span> for me as Turkish is not an Indo-European language.<br><br>
+                </p>
+                
+                <img class="articleImg" src="styles/img/architecture/Chinese.jpg" alt="">
+                <p class="pMargin">Practising Chinese calligraphy in Poznan, 2013. </p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+
+                        &nbsp; &nbsp; But what was <span class="pDark"> most important</span>, it also opened my eyes to a different culture, allowed me to <span class="pDark">communicate</span> with completely unknown people. For the first time, I also realized <span class="pDark">how similar</span> European languages and cultures were. When I was learning English at school, I had a feeling it was so different from my mother's tongue Polish. But when I became proficient in language with completely <span class="pDark">different roots</span>, I started to see overwhelming deep similarities, in grammar, in way of thinking and most importantly in Latin roots of a great part of the vocabulary.
+
+                </p>
+
+                        <div class="testimonials testimonialsDark testimonialsQuotation pMargin">
+                                <p>“Seeing is believing, but is it truth?<br>Depends on your point-of-view.”</p>
+                                <div>
+                                <img class="" src="styles/img/portrait_MorganFreeman.jpg">
+                                <span>Morgan Freeman</span>
+                                </div>                  
+                        </div>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In Istanbul, I met one of the most <span class="pDark">important mentors</span> of my life prof. Ozan Önder Özener, who introduced to me the secrets of  <span class="pDark">parametric design</span>. A way of thinking of buildings as of computer programs, where all parts of geometry could be <span class="pDark">mathematically described</span>. My background in computer science and knowledge of C# gave me a <span class="pDark">tremendous advantage</span> over other peers in my class. In days, I was able to absorb and apply the knowledge that took other students months or more to do. Very soon Parametric Design became my <span class="pDark">strongest asset</span>, and topic of my master thesis.
+                </p>
+
+                <p class="pMargin">
+                        <a href="portfolioArch_7.html" class="portfolioButton"><button class="btn2">Read About my Master Thesis</button></a>
+                </p>
+        </div>   
+</article>
+
+<article class="bgDark">
+        <div class="wrapper wrapper-margin center">
+                <h4>The professional journey begins </h4>
+                <h3>Time as an Architect </h3>
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; After finishing my master's degree, I graduated from architecture faculty in 2014 and the <span class="pLight">next milestone</span> happened. That time, I studied Chinese for around one year, and I was invited for 3 months-long internship to Guizhou province by a local design institute. I had spent amazing and productive time in the Middle Kingdom and I knew, one day I had to come back to China.<br><br>
+
+                        &nbsp; &nbsp; After coming back to Poland started to work for the same Chinese design institute, which wanted to open the European branch of the company. <span class="pLight">Simultaneously</span> my employer supported me to <span class="pLight">start a Ph.D.</span> This way I spent the next few months studying, working on architecture projects and practicing Chinese.<br><br>
+
+                        &nbsp; &nbsp; Good things, however, have a tendency not too last too long. My Chinese employer realized that they were not yet ready to move the creative process to Europe. My Chinese was also not yet good enough to coordinate projects using only this language. I was left with started Ph.D., and for the first time in life technically <span class="pLight">jobless</span>...<br><br>
+                </p>        
+
+                <img class="articleImg" src="styles/img/architecture/MAD_FamilyPicture_Small.jpg" alt="">
+                <p class="pMargin">MAD Architects family picture in Beijing, 2016<br>© Rasmus Daniel Taun</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; That time events started to accelerate again, I designed a portfolio and sent it to a few selected studios in China. A few days later, <span class="pLight">magic happened</span>... I got an invitation for an interview from <span class="pLight">MAD Architects</span>. The studio, I learned about in university, I admired their buildings in design magazines and they wanted to talk with me. I could not <span class="pLight">believe</span> what was happening. The interview went relatively easy. The studio was mostly interested in my parametric design skill-set. A few days later I got a job offer letter, and I knew it was one in a <span class="pLight">million chance</span>, it was that time or never. I borrowed money from parents, bought a one-way ticket and two weeks later I was on a plane to <span class="pLight">Beijing</span>.<br><br>
+
+                </p>
+
+                <img class="articleImg" src="styles/img/architecture/MAD_Work_1.jpg" alt="">
+                <p class="pMargin">At MAD Architects in Beijing, 2016<br>© Rasmus Daniel Taun</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span> 
+                        <br>                    
+                        &nbsp; &nbsp; Time at MAD Architects was definitely the <span class="pLight">most important experience</span> of my life. I worked a lot, even as for Chinese standards: 360 or more hours a month (yes, yes it is around 12 hours a day without free weekends). I learned a crucial lesson: that <span class="pLight">perfection</span> never comes from anything, but it is a series of <span class="pLight">countless iterations</span> and almost impossible persistence.<br><br>
+
+                        &nbsp; &nbsp; What was the most important however are the <span class="pLight">friendships</span> I build and incredibly <span class="pLight">skilled people</span> I had the opportunity to meet. MAD Architects were a unique mixture of cultures, collecting the best of the best designers from all around the world. I believe that everyone has an interesting story to tell, experience to share, and only what I had to do was <span class="pLight">to listen</span>. So, I listened and learned.<br><br>
+                </p>
+                
+                <div class="testimonials">
+                        <img class="imgXS" src="styles/img/portrait_MaYanSong.svg">
+                        <p>"He made serious commitments to the assignments that were distributed to him. Not only delivering satisfying results but also he was always highly motivated to look into other methodologies to improve his working process, which is such a rare quality."</p>
+                        <!-- <p>... with pure heart motivated to make better working environment, which encourages his teams, and everyone in the office. He is always delightful and positive. </p> -->
+                        <div>
+                        <img class="imgM" src="styles/img/portrait_MaYanSong.svg">
+                        <span>Ma Yansong<br>Founder, Principal of MAD Architects<br>www.i-mad.com</span>
+                        <img src="styles/img/signature_MaYanSong.svg">
+                        </div>                  
+                </div>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span> 
+                        <br>                    
+                        &nbsp; &nbsp; During my time at MAD Architects, I contributed to many <span class="pLight">world-class</span> projects, build meaningful friendships and matured as a designer. A year later, I felt it was time for a change. I realized that as working for star architect was an amazing experience, there was one crucial issue. The last word always belonged to the principal architect, and many crucial decisions were not data-based, on the contrary, they were <span class="pLight">arbitrary</span>. As many of the studio's projects are icons of modern architecture, knowledge of an undergoing process started to interrupt me. I felt our buildings were somehow isolated, and we often <span class="pLight">ignored</span> the opinions and feelings of future users.<br><br>
+
+                </p>
+
+                <img class="articleImg" src="styles/img/architecture/PWD_Work.jpg" alt="">
+                <p class="pMargin">2:00am at PWD Architects in Beijing, 2017<br>© Marcel Holmberg</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span> 
+
+                        &nbsp; &nbsp; I wanted to try to be closer to users. I decided to leave my position at MAD Architects and accepted a job offer from a new studio created by two talented, more experienced architects who just left Ole Scheeren's office in Beijing. They were looking for their own <span class="pLight">creative identity</span>.<br><br> 
+
+                        &nbsp; &nbsp; As our newly built team, we worked extremely hard to provide great designs. My <span class="pLight">personal impact</span> on projects grew dramatically. I was able to propose many data-based solutions, that were enthusiastically <span class="pLight">accepted</span> by principal architects and clients. Our team worked hard and our effort was awarded by winning a series of iconic competitions in Asia.<br><br> 
+                </p>
+
+                <p class="pMargin">
+                        <a href="assets/Resume_TomasHEI.pdf" target="_blank"><button class="btn1">Download resume</button></a> 
+                        <a href="index.html#archHero" class="portfolioButton"><button class="btn2">View architecture projects</button></a>
+                </p>
+
+                
+
+        </div>   
+</article>    
+
+<article class="bgWhite">
+        <div class="wrapper wrapper-margin center">
+                <h4>Discovering Identity</h4>
+                <h3>Following my passion</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; While being in Beijing my <span class="pDark">personal impact</span> on projects increased, but I still somehow did not feel concretions with future users. The successful projects I realized were often far away, and there was no opportunity to <span class="pDark">talk</span> to local people. It is why when my old employer from my Ph.D. times contacted me, I decided to move to Guizhou province. Where we meant to realize local projects, talk to local users and try to understand them, finally start building for people.<br><br>
+
+                </p>
+
+                <img class="articleImg" src="styles/img/instagram/Kunming_2019.jpg" alt="">
+                <p class="pMargin">With my wife in Kunming, 2019</p>
+
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+
+                        &nbsp; &nbsp; I became a <span class="pDark">project architect</span>, responsible for coordinating Chinese and newly created Polish design teams. I led multiple social housing projects, and finally, I was close to users. I was able to talk to them and to listen. My <span class="pDark">Chinese proficiency</span> also increased greatly, and it finally opened long-closed doors to the ancient culture. As the work pace was much slower, I had more time to travel with my wife around Asia, and again <span class="pDark">learn</span> from a different culture.<br><br>
+                </p>
+        </div>
+</article>
+
+
+<article class="bgGrayLight">
+        <div class="wrapper wrapper-margin center">
+                <h4>Rediscovering UX</h4>
+                <h3>Back to the roots</h3>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; This time, during one of my evening readings I found an eBook version of <span class="pDark">'Don't make me think'</span>, written by Steve Krug in my hands. I absorbed the book in a few days, and almost <span class="pDark">twelve years later</span>, again I came across term <span class="pDark h2Red">usability</span>. This time it was not just a curiosity but a real problem - this time I knew it was something more. As I read more and more about designing experiences I started to realize it was a field that I was always looking for. It connected three crucial fields that shaped my personality: computer science, design and the ability to <span class="pDark">make people's</span> lives better. <br><br>
+
+                        &nbsp; &nbsp; Finally, in the spring of 2019, I decided to quit my <span class="pDark">lucrative position</span> as the project architect in Guizhou. I was 100 percent sure, that  I wanted to become a <span class="pDark">User Experience</span> Designer. I knew that the long way that led me to this moment was not wasted time, but a <span class="pDark">complex process</span> that will allow me to design excellent experiences. I had enough connections and skills to sustain my life as a freelance architect. I traveled with my wife around China while working with demanding Chinese projects and <span class="pDark">studying</span> User Experience design. I was reading more and more books, articles and video courses.  
+                </p>
+
+                <img class="articleImg" src="styles/img/UX_Books.jpg" alt="">
+                <p class="pMargin">Some of the books I came across during my immersion into UX Design.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; As I <span class="pDark">progressed</span> into the field of Experience Design, I started to see glaring <span class="pDark">resemblances</span> between skills necessary for architects and UX Designers. The biggest differences are scales and timelines. Architectural projects often take <span class="pDark">years to finish</span> and are almost exclusively designed in the Waterfall methodology. Changes are simply too expensive or almost impossible to execute. While in UX Design products are <span class="pDark">technically never finished</span>. Agile or lean methodologies are iterative from their nature. There is always something that could be changed, there is always a way to <span class="pDark">upgrade</span> the product. And it is great! 
+                </p>
+        </div>   
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper wrapper-margin center">
+                <h4>Why UX Design?</h4>
+                <h3>Making people happy by making things simple</h3>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Architecture as a profession is old, ancient even with thousands of years of tradition. This great <span class="pDark">historical heritage</span> is an amazing thing but it also makes architects <span class="pDark">resistant to innovations</span>. Even parametric design, my strongest asset that opened me the doors to MAD Architects in Beijing is not widely used, it is actually still a curiosity. While IT is <span class="pDark">progressive</span> from its nature. There are always new cutting edge technologies to emerge, there is a lot of energy and <span class="pDark">opportunity</span> in the field.
+                </p>
+
+                <div class="testimonials testimonialsDark testimonialsQuotation pMargin">
+                        <p>“Without data, you're just another person with an opinion.”</p>
+                        <div>
+                        <img class="" src="styles/img/portrait_EdwardsDeming.jpg">
+                        <span>W. Edwards Deming</span>
+                        </div>                  
+                </div>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; I chose to become a User Experience Designer because this profession is <span class="pDark">data-driven</span>. In its relatively short history it amazing  developed tools to <span class="pDark">measure</span> user behaviors, that architects could only dream about. Every theory could be benchmarked and proved wrong or correct.  
+                </p>
+
+                <img class="articleImg" src="styles/img/contact_1.jpg" alt="">
+                <p class="pMargin">I am a self-taught UX Designer, during the study working with whiteboard helped me to understand many aspects of this profession. </p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; My mission as a UX Designer is to create logical, <span class="pDark">easy to use</span>, data-based experiences. To hear user voices and carefully combine them with <span class="pDark">business needs</span>.<br><br>
+
+                        &nbsp; &nbsp; As technology <span class="pDark">progresses</span> it tends to get more and more complex. As a designer, I have a special responsibility to make these complicated processes <span class="pDark">simpler</span>. The goal is to create delightful to use, <span class="pDark">inclusive products</span>.<br><br>
+
+                        &nbsp; &nbsp; The design allows us to differentiate our brands by showing attention and care about our customers and users. Everybody values design either consciously or unconsciously. This is why I am <span class="pDark">passionate</span> about creating meaningful, polished experiences. From my experience, I know that good design makes creators and customers happy. 
+                </p>
+                <!-- <img class="articleImg" src="styles/img/contact_1.jpg" alt="">
+                <p class="">xxx</p> -->
+
+        </div>   
+</article>
+
+
+<article id="mySummary" class="bgBlue">
+        <div class="wrapper wrapper-margin center">
+                <h4>Summary</h4>
+                <h1 class="">Intersection of design, business, and intercultural proficiency</h1>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Thanks to my <span class="pDark">diverse background</span> in computer science, architecture, parametric design, team management, and intercultural proficiency. I am able to connect UX/UI design with real <span class="pDark">business goals</span> while providing polished client experiences.<br><br>
+
+                        &nbsp; &nbsp; Currently, I am looking for freelance or full-time commitments. If you have any project or <span class="pDark">idea in mind</span>. Please feel free to contact me, and talk about your objective.<br><br>
+                        
+                        &nbsp; &nbsp; I am passionate about designing and building polished experiences to make sure your customers and users are <span class="pDark">fully satisfied</span> when they are interacting with your products and services online.<br><br>
+                        
+                        &nbsp; &nbsp; <span class="pDark">In case you would like to know more about me, my work or have any questions, feel free to send me an email anytime.</span>        
+                </p>
+
+                <p class="pMargin">
+                        <a href="contact.html"><button class="btn1">Visit contact page</button></a> 
+                        <a href="assets/Resume_TomasHEI.pdf" target="_blank" class="portfolioButton"><button class="btn2">Download resume</button></a>
+                </p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper wrapper-margin wrapper-nomrgbot center">
+                <h4>Follow my journey</h4>
+                <h3>Latest Instagrams</h3>
+                <p class="pBig">Follow my journey on Instagram and feel free to message me anytime:
+                        <a href="https://www.instagram.com/tomas_hei/" class="pDark">@tomas_hei</a>
+                </p>
+
+                <div class="instagram">
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_0.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_1.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_2.jpg"></a>
+
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_3.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_4.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_5.jpg"></a>
+
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_6.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_7.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_8.jpg"></a>
+
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_9.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_10.jpg"></a>
+                        <a href="https://www.instagram.com/tomas_hei/" target="_blank"><img src="styles/img/instagram/TomasHEI_Instagram_11.jpg"></a>         
+                </div>
+                <br><br>
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down Arrow_Up">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div>
+        </div>
+</article>
+
+
+
+<!-- Start FOOTER -->
+<footer class="bgDark">
+        <div class="wrapper center">
+                <h4>Get in touch</h4><br>
+                <h1>Let's work together</h1>
+                <p class="pMargin">
+                        If you have an online business or mobile app idea in your mind or you need some creative advice about product design, please feel free to contact me.  
+                </p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p>Reply Time: within 1-2 working days</p>
+                </div></a><br>
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Let's work together</button></a><br>
+                <div class="mySocial">
+                        <a target="_blank" href="mailto:tomas@heiux.com"><img src="styles/img/icons/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/tczarnecki/"><img src="styles/img/icons/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/tomas_hei/"><img src="styles/img/icons/instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://medium.com/@tomasz_czarnecki"><img src="styles/img/icons/medium.svg" alt=""></a>
+                        <!-- <a target="_blank" href="https://github.com/tomashei"><img src="styles/img/icons/github.svg" alt=""></a> -->
+                        <a target="_blank" href="https://dribbble.com/tomas_hei"><img src="styles/img/icons/dribbble.svg" alt=""></a>
+                </div>
+                <p class="pMargin pSmall">
+                        © 2020 All rights reserved.<br><span class="pLight"><a href="mailto:tomas@heiux.com">Designed & Coded by Tomas HEI</a></span>
+                </p>
+        </div>
+</footer>
+
+
+<!-- <input type="range" min="1" max="60" value="20" oninput="moveSlider(this, 'x')"/>
+<input type="range" min="1" max="40" value="10" oninput="moveSlider2(this, 'y')"/> -->
+
+<script src="styles/javascript/script.js"></script>
+<!-- <script src="script_scroll.js"></script>
+<script src="style_imagesscroll.js"></script>
+<script src="script_touchswipe.js"></script> -->
+
+<script src="styles/javascript/sript_scroll.js"></script>
+
+</body>
+</html>

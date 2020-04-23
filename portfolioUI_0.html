@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <!--
+                Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+                Fair is fair. Answers on a postcard, please ;-)						
+                        
+                Start.	
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+                8   8               8               8           8                   8   8
+                8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+                8               8       8   8           8           8   8   8       8   8
+                8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+                8       8   8               8           8   8   8   8   8           8   8
+                8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+                8   8               8   8   8       8           8           8       8   8
+                8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+                8           8       8   8       8   8       8           8   8           8
+                8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+                8       8       8   8   8       8       8       8   8   8       8       8
+                8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+                8           8   8           8       8   8       8   8       8           8
+                8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+                8   8       8           8           8       8   8   8               8   8
+                8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+                8   8           8   8   8   8   8           8               8   8       8
+                8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+                8   8       8   8   8           8           8   8       8               8
+                8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+                8   8                   8           8               8               8   8
+                8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+                End.
+                -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156160652-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());        
+        gtag('config', 'UA-156160652-1');
+        </script>
+        <!-- Google Analytics: END -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NMMNBFW');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="canonical" href="https://heiux.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="styles/img/favicon.ico" type="image/x-icon">
+        
+        <title>Tomas HEI</title>
+        <meta name="description" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">    
+        
+        <meta name="keywords" content="UX, UI, User Experience, Design, Product, Architecture, Architect, Tomas, HEI, Czarnecki">
+        <meta name="author" content="Tomas HEI Czarnecki">
+        
+        <!--Google-->
+        <meta itemprop="name" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">
+        <meta itemprop="description" content="UX Designer">
+        <meta itemprop="image" content="http://heiux.com/styles/img/social-share-img-v1.jpg">
+            
+        <!--Facebook-->    
+        <meta property="og:title" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://heiux.com"/>
+        <meta property="og:image" content="http://heiux.com/styles/img/social-share-img-v1.jpg"/>
+        <meta property="og:description" content="UX Designer"/>
+
+        <link rel="stylesheet" href="styles/css/style_scroll.css">        
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/menu_hamburger.css">
+        <link rel="stylesheet" href="styles/css/style_animation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/style_media.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMNBFW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- START: Progress BAR -->
+<div class="line" id="scrollIndicator"></div>
+
+<!-- START: Navigation -->
+<nav>
+        <div class="myNav wrapper">
+            <a href="index.html"><img src="styles/img/Logo_HEI_Dark.svg"/></a>
+            <div id="menuHamburger" class="menuDark"> 		
+                    <input type="checkbox">
+                    <!-- <div id="menushadow"></div> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>	
+                    <ul id="menu">
+                        <li class="imgXS"><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolioUX">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/Resume_TomasHEI.pdf" target="_blank">Resume</a></li>   
+                        <li><a href="contact.html"><button class="btn1 btn-menu">Contact</button></a></li>
+                    </ul>
+            </div>
+        </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- Hero Content -->
+<article id="homeHero" class="bgOrangeLight myHero-MarginTop">
+        <div class="wrapper">
+                <div class="portfolioHeroUX">
+                      
+                        <div class="portfolioHeroText">
+                                <h1 class="hPortfolio">02</h1>
+                                <h1>Open Reminder</h1>
+                                <h2 class="">UI Design</h2>
+                                <p class="pBig"><span class="pDark"></span>
+                                        Part two of the redesign case-study. The following section presents a new concept of UI, based on the preceding comprehensive UX process and its deliverables.
+                                </p>
+                                <a href="portfolioUX_0.html"><button class="btn2">Read UX Case Study</button></a>
+                                <!-- <img src="styles/img/portfolioUX/hero_1.jpg"> -->
+                        </div>
+                        <div class="">
+                                <img class="portfolioHeroImg" src="styles/img/portfolioUI/hero_1.jpg">
+                        </div>  
+                </div>
+</div>
+</article>
+
+
+<!-- MAIN CONTENT -->
+<article id="designProcess">
+        <div class="wrapper">
+                <div class="portfolioDetails">
+                        <div>
+                                <h4>My Role</h4>
+                                <p>UI Design<br>
+                                Presentation</p>
+                        </div>
+                        <div>
+                                <h4>Platform</h4>
+                                <p>Android<br>
+                                (Open Source)</p>
+                        </div>
+                        <div>
+                                <h4>Tools</h4>
+                                <p>Pen & Paper<br>
+                                Adobe XD</p>
+                        </div>
+                        <div>
+                                <h4>Timeline</h4>
+                                <p>Mar 2020</p>
+                        </div>
+
+                </div>
+        </div>  
+</article>
+
+<!-- **************** -->
+<!-- CONTENT ARTICLES -->
+<!-- **************** -->
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h1>Brand Design</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; In the first step, before attempting to create a comprehensive UI Design Concept, I started with <span class="pDark">creating branding</span>. The logo of Open Reminder represents a <span class="pDark">heart</span> and a <span class="pDark">notification bell</span>. The logo uses two main branding colors.  
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUi/000_Logo.svg" alt="">
+        </div>   
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h3>Color Palette </h3>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The Color Palette is a result of a broad study based on <span class="pDark">Mood Boards</span> and <span class="pDark">User Research</span>. The majority of users prefer warm red and medical blue as the most suitable colors for the Pill Reminder application.
+                <br></p>
+                <img class="articleImgSmall" src="styles/img/portfolioUi/000_LogoAll.png" alt="">
+                <p>Variations of the logo based on different Mood Boards.</p>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The final 2 colors included in palette came in <span class="pDark">3 variants</span> each: darker, standard and lighter. The colors presented below are in their standard version.
+                <br></p>
+        </div> 
+                <img class="articleImg" src="styles/img/portfolioUI/001_UserInterface.jpg" alt="">
+
+</article>
+
+
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>First Reminder</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; After the first run and presenting onboarding messages the application <span class="pDark">invites users</span> to create New Reminder with a big and easy to spot <span class="pDark">Call to Action</span>. 
+                <br></p>
+        </div>   
+        <img class="articleImg" src="styles/img/portfolioUI/003_HomeEmpty.jpg" alt="">
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h3>Onboarding</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The onboarding screens present visually all the things that are <span class="pDark">important</span> to the user target group:
+                        <ul class="pList pListSmall pMargin">
+                                <li>Personal Space</li>
+                                <li>Family and Relatives</li>
+                                <li>Companionship</li>
+                        </ul>
+                </p>
+                <img class="articleImgSmall" src="styles/img/portfolioUI/002_OnBoarding.jpg" alt="">
+                <p>The onboarding screens, presenting different values.</p>
+
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h3>Add New Reminder</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; During the Interview Sessions, the easy and <span class="pDark">intuitive process</span> of adding New Reminders was <span class="pDark">co-designed</span> with the users. 
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/004_AddMedicine.gif" alt=""> -->
+                <img class="articleImg" src="styles/img/portfolioUI/005_HomeScreen.jpg" alt="">
+                <p>Process of adding a New Reminder in 5 simple steps.</p>
+        </div>   
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h1>Doctor Visits</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; 70 percent of users emphasized the need for creating a <span class="pDark">Personal Health Assistant</span>. Where all the information concerning their health could be <span class="pDark">stored</span> and <span class="pDark">managed</span>. It is why Doctor Visits Reminder functionality was created. It is essentially a different function than a Medication Reminder, therefore it occupies a <span class="pDark">separated screen</span> in the bottom menu bar.
+                <br></p>
+        </div>  
+        <img class="articleImg" src="styles/img/portfolioUI/005_DoctorVisits.jpg" alt=""> 
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h3>Statistics</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The <span class="pDark">Personal Health Assistant</span> should also include statistics function to monitor your progress and medication intake.
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/004_AddMedicine.gif" alt=""> -->
+                <img class="articleImg" src="styles/img/portfolioUI/005_Statistics.jpg" alt="">
+                <p>"Your Progress" screens and extended statistics.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; It is very important for users to be able to monitor <span class="pDark">how many doses</span> of medicine they took. The users with heart issues amplified a need to monitor Blood Pressure measurements on <span class="pDark">specific</span> days and times of the day. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>My Garden</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp;  It is additional functionality. It was one of the <span class="pDark">Top Findings</span> that for the target user group <span class="pDark">Personal Space</span>, <span class="pDark">Family</span> and <span class="pDark">Companionship</span> are crucial values. It is why a Personal Garden was created.
+                <br></p>
+        </div>  
+        <img class="articleImg" src="styles/img/portfolioUI/006_Garden1.jpg" alt=""> 
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h3>Garden Details</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Users could have their own <span class="pDark">personal space</span>, that they could <span class="pDark">customize</span> according to their aesthetics and taste. Additionally, users could <span class="pDark">explore</span> personal gardens created by their neighbors and family members. 
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/004_AddMedicine.gif" alt=""> -->
+                <img class="articleImg" src="styles/img/portfolioUI/006_Garden2.jpg" alt="">
+                <p>Example screens of My Garden functionality.</p>
+
+                <p class="pBig pArticle pMargin">
+                        &nbsp; &nbsp; Exploration creates a <span class="pDark">unique opportunity</span> for interaction and a new way to <span class="pDark">create</span> and <span class="pDark">maintain</span> friendships with users who have similar values. 
+                <br></p>
+        </div>   
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h3>Messagning</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; When the Personal Graden functionality <span class="pDark">creates an opportunity</span> for interaction and commenting, <span class="pDark">no meaningful relationship</span> could be created without direct, personal communication.
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/004_AddMedicine.gif" alt=""> -->
+                <img class="articleImgSmall" src="styles/img/portfolioUI/007_Messages.jpg" alt="">
+                <p>The messages list and private message screens.</p>
+        </div>   
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h1>Steps Counter</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; 80 percent of the users expressed a need for Personal Health Assistant to <span class="pDark">promote</span> a <span class="pDark">healthy lifestyle</span>. It is why Steps Counter functionality was added.
+                <br></p>
+        </div>  
+        <img class="articleImg" src="styles/img/portfolioUI/007_StepsCounter1.jpg" alt=""> 
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h3>Steps Details</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The users could monitor their healthy lifestyle and <span class="pDark">compare</span> their achievements with friends and family members. 
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/004_AddMedicine.gif" alt=""> -->
+                <img class="articleImgSmall" src="styles/img/portfolioUI/007_StepsCounter2.jpg" alt="">
+                <p>Activity and healthy lifestyle statistics.</p>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Additionally, steps gathered by users could be used as a <span class="pDark">micro currency</span> in Personal Garden. Users could <span class="pDark">exchange steps</span> for in-garden decorations and plants. Steps could be also <span class="pDark">donated</span> to friends and family members.
+                <br></p>
+        </div>   
+</article>
+
+
+<article class="bgMedBlue">
+        <div class="wrapper center wrapper-margin">
+                <h1>Tablet Mode</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The target user group contains mostly <span class="pLight">Baby Boomers</span> (55-73). 70 percent of the interviewed users admitted that their senses are not <span class="pLight">as sharp as before</span>. It is why, when they are at home they prefer to use a tablet device instead of a smartphone. 
+                <br></p>
+        </div>  
+        <img class="articleImg" src="styles/img/portfolioUI/020_TabletMode1.jpg" alt=""> 
+</article>
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h3>More Tablet Screens</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; Additional screen space provided by the bigger devices, <span class="pDark">compensates</span> for vision and motoric losses acquired by an <span class="pDark">aging body</span>. It is why the <span class="pDark">tablet version</span> of Pill Reminder was thoughtfully designed. 
+                <br></p>
+        </div>  
+
+        <img class="articleImg imgM" src="styles/img/portfolioUI/020_TabletMode2.jpg" alt=""> 
+        <div class="wrapper center ">
+                <img class="articleImgSmall imgXS" src="styles/img/portfolioUI/020_TabletMode2_Mobile.jpg" alt=""> 
+                <p>Tables screens in horizontal mode.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; It is also very important for users to provide smooth <span class="pDark">background synchronization</span> between devices. The majority of users imagined their interaction with the Pill Reminder in a way that they could add and manage their reminders using a tablet when being in a safe, <span class="pDark">undisturbing environment</span>. The phone should be used to remind users about medications when <span class="pDark">being outside</span>. 
+                <br></p>
+        </div><br><br><br>
+
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>High Contrast Mode</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; <span class="pDark">Visual impairment</span> is a growing issue for users older than 55 years old. 90 percent of interviewed users complained about their senses being <span class="pDark">worsened than before</span>. The Contrast Mode is an essential function when targeting mature users. 
+                <br></p>
+        </div>  
+        <img class="articleImg" src="styles/img/portfolioUI/021_HighContrast1.jpg" alt=""> 
+</article>
+
+<article class="bgGrayLight">
+        <div class="wrapper center wrapper-margin">
+                <h3>More High Contrast Screens</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The color theme in <span class="pDark">High Contrast</span> mode was changed from balanced to warm reds and medical blues to vivid yellows and reds. The assumption is that a <span class="pDark">smooth</span> but not very aesthetically pleasing experience is better than the <span class="pDark">inability</span> to experience at all. 
+                <br></p>
+
+                <img class="articleImg" src="styles/img/portfolioUI/021_HighContrast3.jpg" alt=""> 
+                <p>The High Contrast screens are not as beautiful compared to normal ones, but provide better experience.</p>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The <span class="pDark">High Contrast Mode</span> is fully optional, it is why it is only intended to be used by those in need. 
+                <br></p>
+        </div>  
+</article>
+
+
+<article class="bgWhite">
+        <div class="wrapper center wrapper-margin">
+                <h1>Conclusions</h1>
+                <h3>Research Helps to Justify Design Decisions</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The design process of the Pill Reminder was predeceased by a long and comprehensive <a href="portfolioUI_0.html">UX Design Process</a>. When I gathered and analyzed a great amount of information. Many <span class="pDark">insights</span> generated during the first phase were used to <span class="pDark">justify design</span> decisions while designing UX and UI elements. 
+                <br></p>
+
+                <h5 class="pMargin">What did I learn?</h5>
+                <ol class="pList pListSmall pMargin"><span class="pDark"></span>
+                        <li>Designing for many different <span class="pDark">screen sizes</span> and orientations is challenging. User Experience on Smartphones is always slightly different than on Tablets.</li>
+                        <li>It is important to start with <span class="pDark">simple things</span> and then make the design <span class="pDark">more complex</span>. I started designing UI by choosing a logo and branding colors. It allowed me to save time and effort in subsequent iterations.</li>
+                        <li>User Testing early and often could <span class="pDark">save designers</span> and development teams great amounts of limited resources. During the UX Design Phase, I tested my ideas every few days. But during the UI Design Phase, I challenged my design less often. I now know that some redundant work could be <span class="pDark">avoided</span> if I conducted a few more tests.</li>
+                </ol><br>
+
+                <h5 class="pMargin">What could be improved?</h5>
+                <ol class="pList pListSmall pMargin"><span class="pDark"></span>
+                        <li><span class="pDark">Prototyping Skills</span>: by incorporating different software and techniques to create more realistic prototypes.</li>
+                        <li><span class="pDark">Mirco-interactions</span><span class="pDark"></span>: by studying new ways of creating those important and often omitted fields of design.</li>
+                </ol><br>
+
+                <br><br><br>
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div>
+        </div>   
+</article>
+
+<article class="bgPinkLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>The Next Step</h1>
+                <h3>Daily UI Challange</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp;  I am a <span class="pDark">lifelong learner</span>. It is why in my free time I challenge myself to read books, learn languages and <span class="pDark">enhance my design skills</span>. The Daily UI challenge provides an <span class="pDark">externalized</span>, documented results of the self-learning process.
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/hero_1.jpg" alt=""> -->
+                <img class="articleImgXS" src="styles/img/03_DailyUI.jpg" alt="">
+                <!-- <p>UI Screens in mockups.</p> -->
+
+                <a href="portfolioDailyUI_0.html"><button class="btn1">See Daily UI Challenge</button></a>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; <span class="pDark">Thank you for your time</span>, if you have any questions or ideas how could I improve my <span class="pDark">workflow</span>. Please do not hesitate to contact me, I am always willing to receive constructive feedback.                 
+                <br></p>
+
+                <a href="contact.html"><button class="btn2">Visit Contact Page</button></a>
+
+
+                <br><br><br>
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div>
+        </div>   
+</article>
+
+<!-- Start FOOTER -->
+<footer class="bgDark">
+        <div class="wrapper center">
+                <h4>Get in touch</h4><br>
+                <h1>Let's work together</h1>
+                <p class="pMargin">
+                        If you have an online business or mobile app idea in your mind or you need some creative advice about product design, please feel free to contact me.  
+                </p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p>Reply Time: within 1-2 working days</p>
+                </div></a><br>
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Let's work together</button></a><br>
+                <div class="mySocial">
+                        <a target="_blank" href="mailto:tomas@heiux.com"><img src="styles/img/icons/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/tczarnecki/"><img src="styles/img/icons/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/tomas_hei/"><img src="styles/img/icons/instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://medium.com/@tomasz_czarnecki"><img src="styles/img/icons/medium.svg" alt=""></a>
+                        <!-- <a target="_blank" href="https://github.com/tomashei"><img src="styles/img/icons/github.svg" alt=""></a> -->
+                        <a target="_blank" href="https://dribbble.com/tomas_hei"><img src="styles/img/icons/dribbble.svg" alt=""></a>
+                </div>
+                <p class="pMargin pSmall">
+                        © 2020 All rights reserved.<br><span class="pLight"><a href="mailto:tomas@heiux.com">Designed & Coded by Tomas HEI</a></span>
+                </p>
+        </div>
+</footer>
+
+
+<!-- <input type="range" min="1" max="60" value="20" oninput="moveSlider(this, 'x')"/>
+<input type="range" min="1" max="40" value="10" oninput="moveSlider2(this, 'y')"/> -->
+
+<script src="styles/javascript/script.js"></script>
+<!-- <script src="script_scroll.js"></script>
+<script src="style_imagesscroll.js"></script>
+<script src="script_touchswipe.js"></script> -->
+
+<script src="styles/javascript/sript_scroll.js"></script>
+
+</body>
+</html>

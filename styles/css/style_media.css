@@ -1,0 +1,346 @@
+/****************************************/
+/*            MEDIA QUERRIES            */
+/****************************************/
+/* // Small devices (landscape phones, 576px and up) eg. 576 x 768 */
+@media (min-width: 576px) { 
+
+    .myPortrait img {
+        height: 60px;
+    }
+
+    .myPortraitDark img {
+        height: 40px;
+    }
+
+
+    
+
+}
+
+/* // Medium devices (tablets, 768px and up) eg. 768 x 1024*/
+@media (min-width: 768px) {
+
+    .imgXS {
+        display: none;
+    }
+    
+    .imgM {
+        display: block;
+    }
+
+    .portfolioUX {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        /* background-color: #4CAF50; */
+    }
+    
+    .portfolioReverse {
+        flex-direction: row-reverse;
+    }
+    
+    .portfolioText {
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .portfolioArchi div {
+        width: 49%;
+        text-align: left;
+        margin: 25px 0;
+        padding-bottom: 10px;
+    }   
+    
+    .articleImgSmall {
+        width: 60%;
+    }
+
+    .articleImgXS {
+        width: 25%;
+    }
+
+    .portfolioUX img {
+        height: 80vh;
+        width: auto;
+    }
+
+    .portfolioHeroUX {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        /* margin-top: 100px; */
+        /* margin-bottom: -10px; */
+    
+    }
+    
+    .portfolioHeroImg {
+        height: auto;
+        width: 50vw;
+        max-width: 550px;
+        margin: 0;
+        padding: 0;
+        /* margin-top: 60px; */
+    }
+
+    .portfolioHeroPhone {
+        height: auto;
+        /* max-height: 80vh; */
+        width: 420px;
+        margin: 0px 0 0 0;
+        padding: 80px 20px 0 0; 
+        transform: rotate(10deg); 
+    }
+    
+    .portfolioHeroText {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left:0;
+        text-align: left;
+        /* margin-top: -15%; */
+            /* background-color: #4CAF50; */
+    }
+    
+
+    .portfolioDetails {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+    .portfolioDetails > div {
+        flex-grow: 1;
+        width: auto;
+        /* text-align: left; */
+    }
+    
+    .portfolioDetails p {
+        margin: 5px 0 15px 0;
+    }
+
+    .instagram {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .instagram a {
+        width: 32%;
+        margin: 10px 0;
+    }
+
+    .smallFields {
+        flex-wrap: nowrap;
+    }
+    
+    .smallFields div {
+        width: 33%;
+    }
+
+    
+
+/****************************************/
+/*             MY WAY TO UX             */
+/****************************************/
+.myWayUX {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 90vh;
+    max-height: 900px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.myWayUXitem {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start; */
+    width: 35%;
+    flex-grow: 1;
+}
+
+.myWayUXitem p {
+        margin: 6px 0 0 0;
+}
+
+.myWayToUX_Image {
+    max-width: 32%;
+    height: 100%;
+    order: 2;
+    margin-top: -30px;
+}
+
+
+.myWayUXitem:nth-child(even) {
+    /* background: red; */
+    order: 3;
+    align-items: flex-end;
+}
+
+.myWayUXitem:nth-child(odd) {
+    /* background:blue; */
+    order: 1;
+}
+
+.myWayUXShowM {
+    display: inline-block;
+}
+
+
+}
+
+/* // Large devices (desktops, 992px and up) eg. 1024x768*/
+@media (min-width: 992px) {
+
+    .pMargin {
+        margin-left: 250px;
+        margin-right: 250px;
+        /* color: var(--myGrayButton); */
+    }
+
+    nav {
+        /* position: fixed; */
+        /* background-color: white; */
+
+    }
+
+    .wrapper {
+        /* background: red; */
+        max-width: 992px;
+    }
+
+    footer > .wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .hBig {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+   
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    html, body {
+        /* max-width: 1200px; */
+    }
+
+    .bgBluePrint {
+
+        background-size: 5vw;
+    }
+
+    .wrapper {
+        /* background: red; */
+        max-width: 1200px;
+    }
+
+    .wrapper-margin {
+        /* margin: 0 auto; */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }  
+
+    h1 {
+        font-size: 5em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .hPortfolio {
+        font-size: 20em;
+    }
+    
+    .hPortfolio {
+        font-size: 15em;
+    }
+
+    button {
+        width: auto;
+        margin: 15px 0;
+    }
+
+    article {
+        /* padding: 20px 0; */
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .testimonials {
+        padding: 30px 45px; 
+        margin-top: 0px;
+    }
+
+    .testimonials img {
+        height: 150px;
+    }
+
+    .testimonialsQuotation div {
+        justify-content: flex-end;
+    }
+    
+    .testimonialsQuotation img {
+        height: 60px;
+     }
+
+    .Arrow_Down {
+        /* padding-left: 13px; */
+        /* position: absolute; */
+        width: 100%;
+        bottom: 0px;
+    }
+
+    .xl-left {
+        text-align: left;
+    }
+
+}
+
+/* Extra Extra large devices (large desktops, 1920px and up) */
+@media (min-width: 1920px) { 
+    .wrapper-margin {
+        /* margin: 0 auto; */
+        padding-top: 70px;
+        padding-bottom: 70px;
+    } 
+
+    .wrapper-nomrgbot {
+        padding-bottom: 20px;        
+    }
+
+}
+
+/* Extra Extra Extra large devices (large desktops, 2048px and up) */
+@media (min-width: 2048px) { 
+    /* .myWayUX {
+        height: 64vh;
+    }
+
+    .myWayToUX_Image {
+        max-width: 30%;
+        height: 95%;
+    } */ 
+    
+}
+

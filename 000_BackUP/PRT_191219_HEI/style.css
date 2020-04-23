@@ -1,0 +1,505 @@
+/* Font Declarations */
+@font-face{
+    font-family: publico-light;
+    font-style:normal;
+    font-weight:400;
+    src:url(fonts/publico-light.eot?#iefix) format("embedded-opentype"),
+    url(fonts/publico-light.woff) format("woff"),
+    url(fonts/publico-light.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: publico-medium;
+    font-style:normal;
+    font-weight:400;
+    src:url(fonts/publico-medium.eot?#iefix) format("embedded-opentype"),
+    url(fonts/publico-medium.woff) format("woff"),
+    url(fonts/publico-medium.ttf) format("truetype");
+}
+
+@font-face{
+    font-family:maquette-regular;
+    font-style:normal;
+    font-weight:400;
+    src:url(fonts/maquette-regular.eot?#iefix) format("embedded-opentype"),
+    url(fonts/maquette-regular.woff) format("woff"),
+    url(fonts/maquette-regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family:maquette-medium;
+    ont-style:normal;
+    font-weight:400;
+    src:url(fonts/maquette-medium.eot?#iefix) format("embedded-opentype"),
+    url(fonts/maquette-medium.woff) format("woff"),
+    url(fonts/maquette-medium.ttf) format("truetype");
+}
+
+/* Geneal Declarations */
+:root {
+    --myWhite: #FFFFFF;
+    --myBlack: #000000;
+    --myDark: #202020; 
+    --myPurple: #595CA2;
+    --myRed: #FF5252;    
+
+
+    --myGreenLight: #F5F9EC;
+    --myOrangeLight: #FBF1E4;
+    --myPinkLight: #F9F2F8;
+    --myBlueLight: #E3ECFB;
+    --myGrayLight: #F9F9F9;
+
+
+    --myGrayButton: #C4C4C4;
+    --myGray1: #808080;
+    --myPurpleLight: #cdcee3;
+
+    /* font-size: 17px; */
+    --nav-height: 2.5em;
+
+    /* --vHeight: 1;
+    --vHeightHero: 1; */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: maquette-regular;
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+    text-decoration: none;
+    
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* display: flex;
+    flex-flow: row wrap; */
+}
+
+/* START: BACKGROUND COLORS */
+.bgDark {
+    background-color: var(--myDark);
+    color: var(--myWhite);
+}
+
+.bgDark p {
+    color: var(--myGrayButton);
+}
+
+.bgPurple {
+    background-color: var(--myPurple);
+    color: var(--myWhite);
+}
+
+.bgPurple p {
+    color: var(--myPurpleLight);
+}
+
+.bgWhite {
+    background-color: var(--myWhite);
+}
+
+.bgWhite p {
+    color: var(--myGray1);
+}
+
+.bgGreenLight {
+background-color: var(--myGreenLight);
+}
+
+.bgOrangeLight {
+    background-color: var(--myOrangeLight);
+}
+
+.bgPinkLight {
+    background-color: var(--myPinkLight);
+}
+
+.bgBlueLight {
+    background-color: var(--myBlueLight);
+}
+
+.bgGreenLight p, .bgOrangeLight p, .bgPinkLight p, .bgBlueLight p {
+    color: var(--myGray1);
+}
+
+
+/* END: BACKGROUND COLORS */
+
+h1 {
+    font-family: publico-medium;
+    font-size: 5em;
+    letter-spacing: -2.5px;
+    /* margin-bottom: 25px; */
+}
+
+h2 {
+    font-family: maquette-medium;
+    font-size: 3em;
+    letter-spacing: -2.5px;
+    margin: 0 0 25px 0;
+}
+
+h3 {
+    font-family: publico-medium;
+    font-size: 2.5em;
+    letter-spacing: -2.5px;
+    /* margin-bottom: 25px; */
+    margin-top: 25px;
+
+}
+
+.hPortfolio {
+    font-size: 20em;
+    color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+p {
+    margin: 25px 0;
+    /* color: var(--myGrayButton); */
+}
+
+.pDark {
+    font-family: maquette-medium;
+    color: var(--myBlack);
+}
+
+.pLight {
+    font-family: maquette-medium;
+    color: var(--myWhite);
+}
+
+.pBig {
+    font-size: 1.25em;    
+}
+
+.h2Red {
+    color: var(--myRed);
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+button {
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--myWhite);
+    
+    border-radius: 4px;
+    border: none; 
+    /* border: 0px solid #4CAF50;  */
+    width: auto;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    vertical-align: middle;
+}
+
+
+  
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: var(--myWhite);
+}
+
+
+.btn1 {
+    background-color: var(--myRed);
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 1px solid var(--myGrayButton); 
+    color: var(--myGrayButton);
+}
+
+.btn3 {
+    background-color: var(--myBlack);
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 1px solid var(--myGray1); 
+    color: var(--myGray1);
+}
+
+.btn-small {
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+}
+
+/* START: Navigation Declarations */
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    /* height: auto; */
+    padding: 15px 0;
+    /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.7) ; */
+    /* box-shadow: 0px 5px 50px black; */
+    z-index: 2;
+
+    /* height: auto; */
+    color: var(--myWhite);
+}
+
+.myNav {
+    display: flex;
+
+    /* list-style: none; */
+    /* margin: 0 auto; */
+    padding: 0;
+    font-size: 1em;/*calc(2*var(--nav-height)); */
+    /* line-height: var(--nav-height); */
+    /* background-color: purple; */
+    height: auto;
+    /* vertical-align: middle; */
+
+}
+
+.myNav a {
+    margin-right: auto;
+}
+
+.myNav img {
+    /* background: hsla(228, 100%, 50%, 0.5); */
+    margin: 0;
+    padding: 0;
+    height: var(--nav-height);
+    /* background: blue; */
+    vertical-align: top;
+}
+
+.menuToggle {
+    display: none;
+}
+/* END: Navigation Declarations */
+
+
+
+
+article {
+    position: relative;
+    margin: 0px;
+    padding: 100px 0;
+    height: auto;
+    /* min-height: 100vh; */
+    /* background-color: red; */
+}
+
+.fullScreen {
+    height: 100vh;
+    padding: 0;   
+}
+
+.wrapper {
+    /* position: relative; */
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* background-color: red; */
+}
+
+article > .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+
+/* PORTFOLIO UX */
+.portfolioUX {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: #4CAF50; */
+}
+
+.portfolioReverse {
+    flex-direction: row-reverse;
+}
+
+.portfolioText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 75px;
+    /* margin-top: -15%; */
+        /* background-color: #4CAF50; */
+}
+
+.portfolioReverse > .portfolioText {
+    padding-left: 0;
+}
+
+.portfolioUX > div {
+    /* background-color: red; */
+    height: auto;
+    flex-basis: auto;
+}
+
+.portfolioUX img {
+    height: 60vh;
+}
+
+/* PORTFOLIO ARCHITECTURE */
+.portfolioArchi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolioArchi div {
+    background: var(--myGrayLight);
+    width: 49%;
+    margin: 25px 0;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.portfolioArchi img {
+    width: 100%;
+    width: calc(100% + 25px);
+    margin-left: -25px;
+}
+
+
+
+
+.Arrow_Down {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+    display: inline-flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.Arrow_Down img {
+    height: 100px;
+    padding: 25px;
+}
+
+/* My Portrait */
+.myPortrait {
+    display: inline-flex;
+    align-items: center;
+    color: var(--myWhite);
+    margin: 15px 0;
+}
+
+.myPortrait img {
+    height: 80px;
+}
+
+.myPortrait p {
+    height: auto;
+    margin-left: 15px;
+    color: var(--myWhite);
+    font-size: 1rem;
+}
+
+
+/* Testimonials */
+.testimonials {
+    border: 3px solid var(--myWhite);
+    padding: 30px 45px;
+    margin: 40px 0;   
+}
+
+.testimonials img {
+    height: 150px;
+}
+
+.testimonials div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 100%;
+}
+.testimonials p {
+    font-style: italic;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--myWhite);
+}
+.testimonials span {
+    height: auto;
+    margin-left: 15px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+
+
+/* MEDIA QUERRIES */
+/* // Small devices (landscape phones, 576px and up) eg. 576 x 768 */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) eg. 768 x 1024*/
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) eg. 1024x768*/
+@media (min-width: 992px) {
+
+    nav {
+        position: fixed;
+        /* background-color: white; */
+
+    }
+
+    .wrapper {
+        /* background: red; */
+        max-width: 992px;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    html, body {
+        /* max-width: 1200px; */
+    }
+
+    .wrapper {
+        /* background: red; */
+        max-width: 1200px;
+    }
+
+
+}

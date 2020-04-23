@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <!--
+                Alright, you can look at this code - but only if you solve this maze within 10 seconds. 
+                Fair is fair. Answers on a postcard, please ;-)						
+                        
+                Start.	
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa   a
+                8   8               8               8           8                   8   8
+                8   8   aaaaaaaaa   8   aaaaa   aaaa8aaaa   aaaa8   aaaaa   aaaaa   8   8
+                8               8       8   8           8           8   8   8       8   8
+                8aaaaaaaa   a   8aaaaaaa8   8aaaaaaaa   8aaaa   a   8   8   8aaaaaaa8   8
+                8       8   8               8           8   8   8   8   8           8   8
+                8   a   8aaa8aaaaaaaa   a   8   aaaaaaaa8   8aaa8   8   8aaaaaaaa   8   8
+                8   8               8   8   8       8           8           8       8   8
+                8   8aaaaaaaaaaaaaaa8aaa8   8aaaa   8   aaaaa   8aaaaaaaa   8   aaaa8   8
+                8           8       8   8       8   8       8           8   8           8
+                8   aaaaa   8aaaa   8   8aaaa   8   8aaaaaaa8   a   a   8   8aaaaaaaaaaa8
+                8       8       8   8   8       8       8       8   8   8       8       8
+                8aaaaaaa8aaaa   8   8   8   aaaa8aaaa   8   aaaa8   8   8aaaa   8aaaa   8
+                8           8   8           8       8   8       8   8       8           8
+                8   aaaaa   8   8aaaaaaaa   8aaaa   8   8aaaa   8aaa8   aaaa8aaaaaaaa   8
+                8   8       8           8           8       8   8   8               8   8
+                8   8   aaaa8aaaa   a   8aaaa   aaaa8aaaa   8   8   8aaaaaaaaaaaa   8   8
+                8   8           8   8   8   8   8           8               8   8       8
+                8   8aaaaaaaa   8   8   8   8aaa8   8aaaaaaa8   aaaaaaaaa   8   8aaaaaaa8
+                8   8       8   8   8           8           8   8       8               8
+                8   8   aaaa8   8aaa8   aaaaa   8aaaaaaaa   8aaa8   a   8aaaaaaaa   a   8
+                8   8                   8           8               8               8   8
+                8   8aaaaaaaaaaaaaaaaaaa8aaaaaaaaaaa8aaaaaaaaaaaaaaa8aaaaaaaaaaaaaaa8aaa8
+                End.
+                -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156160652-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());        
+        gtag('config', 'UA-156160652-1');
+        </script>
+        <!-- Google Analytics: END -->
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NMMNBFW');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="canonical" href="https://heiux.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="styles/img/favicon.ico" type="image/x-icon">
+        
+        <title>Tomas HEI</title>
+        <meta name="description" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">    
+        
+        <meta name="keywords" content="UX, UI, User Experience, Design, Product, Architecture, Architect, Tomas, HEI, Czarnecki">
+        <meta name="author" content="Tomas HEI Czarnecki">
+        
+        <!--Google-->
+        <meta itemprop="name" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting.">
+        <meta itemprop="description" content="UX Designer">
+        <meta itemprop="image" content="http://heiux.com/styles/img/social-share-img-v1.jpg">
+            
+        <!--Facebook-->    
+        <meta property="og:title" content="Tomas HEI is a UX Designer with an intercultural background. Custom UX/UI Design, Prototyping, Front-end Development, and Digital Strategy Consulting."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://heiux.com"/>
+        <meta property="og:image" content="http://heiux.com/styles/img/social-share-img-v1.jpg"/>
+        <meta property="og:description" content="UX Designer"/>
+        
+        <link rel="stylesheet" href="styles/css/style_scroll.css">  
+        <link rel="stylesheet" href="styles/css/reset.css">
+        <link rel="stylesheet" href="styles/css/menu_hamburger.css">
+        <link rel="stylesheet" href="styles/css/style_animation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link rel="stylesheet" href="styles/css/style_media.css">
+        <!-- LightBox --><link href="styles/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMMNBFW"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- START: Progress BAR -->
+<div class="line" id="scrollIndicator"></div>
+
+<!-- START: Navigation -->
+<nav>
+        <div class="myNav wrapper">
+            <a href="index.html"><img src="styles/img/Logo_HEI_Dark.svg"/></a>
+            <div id="menuHamburger" class="menuDark"> 		
+                    <input type="checkbox">
+                    <!-- <div id="menushadow"></div> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>	
+                    <ul id="menu">
+                        <li class="imgXS"><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolioUX">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="assets/Resume_TomasHEI.pdf" target="_blank">Resume</a></li>   
+                        <li><a href="contact.html"><button class="btn1 btn-menu">Contact</button></a></li>
+                    </ul>
+            </div>
+        </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- Hero Content -->
+<article id="homeHero" class="bgPinkLight myHero-MarginTop">
+        <div class="wrapper">
+                <div class="portfolioHeroUX">
+                      
+                        <div class="portfolioHeroText">
+                                <h1 class="hPortfolio">03</h1>
+                                <h1>Daily UI</h1>
+                                <h2 class="">Challenge</h2>
+                                <p class="pBig"><span class="pDark"></span>
+                                        The following section presents the results of my Daily UI challenge. I am a lifelong learner, constantly looking for opportunities to acquire new experiences.
+                                </p>
+                                <!-- <img src="styles/img/portfolioUX/hero_1.jpg"> -->
+                                <a href="portfolioUX_0.html"><button class="btn2">Read About UX Process</button></a>
+                        </div>
+                        <div class="">
+                                <img class="portfolioHeroImg" src="styles/img/portfolioDailyUI/hero_1.jpg">
+                        </div>  
+                </div>
+</div>
+</article>
+
+
+<!-- MAIN CONTENT -->
+<article id="designProcess">
+        <div class="wrapper">
+                <div class="portfolioDetails">
+                        <div>
+                                <h4>My Role</h4>
+                                <p>UI Designer</p>
+                        </div>
+                        <div>
+                                <h4>Platform</h4>
+                                <p>Android<br>
+                                iOS<br>
+                                Web</p>
+                        </div>
+                        <div>
+                                <h4>Tools</h4>
+                                <p>Adobe XD<br>
+                                Figma<br>
+                                Affinity Designer</p>
+                        </div>
+                        <div>
+                                <h4>Timeline</h4>
+                                <p>Mar 2020<br>
+                                ~</p>
+                        </div>
+
+                </div>
+        </div>  
+</article>
+
+<!-- **************** -->
+<!-- CONTENT ARTICLES -->
+<!-- **************** -->
+
+<article class="bgWite">
+        <div class="wrapper center wrapper-margin">
+                <!-- <h1>Daily UI #013</h1>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; The 13th <span class="pDark">DailyUI #013</span> Direct Messaging.
+                        
+                        The idea was to create a clean Messaging App concept. With different layers of UI overlapping. 
+                <br></p> -->
+
+                <!-- START: DailyUI Portfolio -->
+                <div class="portfolioArchi"> 
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_016.jpg" data-lightbox="DailyUI" data-title="Subscribe to our newsletter for the latest news, freebies, and exclusive content about art.">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_016_Small.jpg" alt="">
+                                </a>
+                                <h3>DailyUI #016: PopUp</h3>
+                                <p>
+                                        The 14th <span class="pDark">DailyUI #016</span> PopUp/Overlay.
+                        
+                                        The PopUp concept was inspired by the Bauhaus style that orginated in Germany over hundread years ago. 
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_016.jpg" data-lightbox="DailyUI_Button" data-title="Subscribe to our newsletter for the latest news, freebies, and exclusive content about art."><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_015.jpg" data-lightbox="DailyUI" data-title="Reader and Night Modes: save your eyes and read easily!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_015_Small.jpg" alt="">
+                                </a>
+                                <h3>DailyUI #015: Switch On/Off</h3>
+                                <p>
+                                        The 14th <span class="pDark">DailyUI #015</span> Switch On/Off.
+                        
+                                        The Switch On/Off concept was inspired by a reader app that allows you to save articles for later. My main concern was to allow users to adjust article display modes according to their preferences.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_015.jpg" data-lightbox="DailyUI_Button" data-title="Reader and Night Modes: save your eyes and read easily!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_014.jpg" data-lightbox="DailyUI" data-title="Countdown timer: be the first to get a coupon!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_014_Small.jpg" alt="">
+                                </a>
+                                <h3>DailyUI #014: Countdown Timer</h3>
+                                <p>
+                                        The 14th <span class="pDark">DailyUI #014</span> Countdown Timer.
+                        
+                                        Countdown was inspired by fashion stores offering seasonal discounts for selected products. 
+
+                                        Stock picture by: 
+                                        <a target="_blank" href="https://www.pexels.com/@godisable-jacob-226636">@godisable-jacob</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_014.jpg" data-lightbox="DailyUI_Button" data-title="Countdown timer: be the first to get a coupon!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_013.jpg" data-lightbox="DailyUI" data-title="Direct Messaging: Keep in contact with your friends!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_013_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #013: Direct Messaging</h3>
+                                <p>
+                                        The 13th <span class="pDark">DailyUI #013</span> Direct Messaging.
+                        
+                                        The idea was to create a clean Messaging App concept. With different layers of UI overlapping. 
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_013.jpg" data-lightbox="DailyUI_Button" data-title="Direct Messaging: Keep in contact with your friends!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_012.jpg" data-lightbox="DailyUI" data-title="Fujifilm X100V: Impossibly powerful camera in the smallest body!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_012_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #012: E-Commerce Shop</h3>
+                                <p>
+                                        The 12th <span class="pDark">DailyUI #012</span> E-Commerce Shop (Single Page).
+                        
+                                        Fujifilm store concept page, the main idea was to promote authors using the following system. 
+                        
+                                        Stock picture by: 
+                                        <a target="_blank" href="https://unsplash.com/@dtolokonov">@dtolokonov</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_012.jpg" data-lightbox="DailyUI_Button" data-title="Football Simulator: Score fast!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_011.jpg" data-lightbox="DailyUI" data-title="Fujifilm X100V: Impossibly powerful camera in the smallest body!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_011_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #011: Flash Message</h3>
+                                <p>
+                                        The 11th <span class="pDark">DailyUI #011</span> Flash Message.
+                        
+                                        The concept was to create a very encouraging Message for Success and a playful one for Failure.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_011.jpg" data-lightbox="DailyUI_Button" data-title="Football Simulator: Score fast!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_010.jpg" data-lightbox="DailyUI" data-title="Instax Photo: Unforgettable memories frozen!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_010_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #010: Social Share</h3>
+                                <p>
+                                        The 10th <span class="pDark">DailyUI #010</span> Social Share.
+                        
+                                        Instax Photo App is inspired by Fujifilm's brand creating instant photography.
+                        
+                                        Stock pictures by: 
+                                        <a target="_blank" href="https://unsplash.com/@nicolegeri">@nicolegeri</a>,
+                                        <a target="_blank" href="https://unsplash.com/@chestnut">@chestnut</a>,
+                                        <a target="_blank" href="https://unsplash.com/@nushtaev_dmitriy">@nushtaev_dmitriy</a>,
+                                        <a target="_blank" href="https://unsplash.com/@alexhddife">@alexhddife</a>,
+                                        <a target="_blank" href="https://unsplash.com/@jtylernix">@jtylernix</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_010.jpg" data-lightbox="DailyUI_Button" data-title="Instax Photo: Unforgettable memories frozen!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_009.jpg" data-lightbox="DailyUI" data-title="Marshall Player: Let's Rock & Roll!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_009_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #009: Music Player</h3>
+                                <p>
+                                        The 9th <span class="pDark">DailyUI #009</span> Music Player.
+                        
+                                        Marshall Player is inspired by a legendary company producing Rock & Roll gear.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_009.jpg" data-lightbox="DailyUI_Button" data-title="Marshall Player: Let's Rock & Roll!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_008.jpg" data-lightbox="DailyUI" data-title="CATPlanet: Where is the quantum cat?">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_008_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #008: 404 Page</h3>
+                                <p>
+                                        The eight <span class="pDark">DailyUI #008</span> Challenge: 404 Page.
+                        
+                                        Schrodinger's cat is a quantum creature, no one is truly certain what is happening to her.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_008.jpg" data-lightbox="DailyUI_Button" data-title="Impossible Date App: let your dreams led you!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_007.jpg" data-lightbox="DailyUI" data-title="CATPlanet: Where is the quantum cat?">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_007_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #007: Settings</h3>
+                                <p>
+                                        The seventh <span class="pDark">DailyUI #007</span> Challenge: Settings.
+                        
+                                        A concept of Settings with the function of changing currency for iOS.                        
+                        
+                                        Stock picture by: <a target="_blank" href="https://unsplash.com/@fotosushi">@fotosushi</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_007.jpg" data-lightbox="DailyUI_Button" data-title="Impossible Date App: let your dreams led you!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_006.jpg" data-lightbox="DailyUI" data-title="Paypal for iOS: An easy way to pay!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_006_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #006: User Profile</h3>
+                                <p>
+                                        The sixth <span class="pDark">DailyUI #006</span> Challenge: User Profile. It is a concept of a Freelance service for Photographers.                         
+                        
+                                        Stock pictures by: <a target="_blank" href="https://unsplash.com/@jcosens">@jcosens</a>, <a target="_blank" href="https://unsplash.com/@petersjo">@petersjo</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_006.jpg" data-lightbox="DailyUI_Button" data-title="Impossible Date App: let your dreams led you!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_005.jpg" data-lightbox="DailyUI" data-title="Impossible Date App: let your dreams led you!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_005_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #005: Impossible Date Icon</h3>
+                                <p>
+                                        The fifth <span class="pDark">DailyUI #005 Challenge</span>: Impossible Date App Icon. The task was to create an app icon, and I wanted to experiment with some impossible geometries - they somehow always fascinated me. 
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_005.jpg" data-lightbox="DailyUI_Button" data-title="Impossible Date App: let your dreams led you!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_004.jpg" data-lightbox="DailyUI" data-title="Eclipse Calculator: do you want to know when the magic happens?">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_004_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #004:<br>Eclipse Calculator</h3>
+                                <p>
+                                        The fourth <span class="pDark">DailyUI #004 Challenge</span>: Calculator. For this task, I wanted to try something different than a classical calculator. Eclipse Calculator was the first unconventional idea that appeared in my mind.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_004.jpg" data-lightbox="DailyUI_Button" data-title="Eclipse Calculator: do you want to know when the magic happens?"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_003.jpg" data-lightbox="DailyUI" data-title="Unique Fashion: Wanna enhance personal style?">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_003_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #003:<br>Unique Fashion</h3>
+                                <p>
+                                        The third <span class="pDark">DailyUI #003 Challenge</span>: Landing Page. I gave another try to Affinity Designer and tried to integrate pixel persona into my workflow. Fashion picture by: <a target="_blank" href="https://unsplash.com/@ohthehumanity">@ohthehumanity</a>.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_003.jpg" data-lightbox="DailyUI_Button" data-title="Unique Fashion: Wanna enhance personal style?"><button class="btn2">Zoom In</button></a>
+                        </div>
+                        
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_002.jpg" data-lightbox="DailyUI" data-title="Sweet Valley: Need a Vegan Doughnut? Do not wait!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_002_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #002: Sweet Valley</h3>
+                                <p>
+                                        My second <span class="pDark">DailyUI #002</span> Challenge, I gave another try to <span class="pDark">Affinity Designer</span>. Fast logo and UI Design. Please do not consider usability as it is just a concept. 
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_002.jpg" data-lightbox="DailyUI_Button " data-title="Sweet Valley: Need a Vegan Doughnut? Do not wait!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                        <div>
+                                <a href="styles/img/portfolioDailyUI/DailyUI_001.jpg" data-lightbox="DailyUI" data-title="Jupiter Travel: Bored of living on Earth? Register now!">
+                                        <img src="styles/img/portfolioDailyUI/DailyUI_001_Small.jpg" alt="">
+                                </a>
+                                <h3>Daily UI #001: Jupiter Travel</h3>
+                                <p>
+                                        My first <span class="pDark">DailyUI #001</span> Challenge, and also the very first image ever created using <span class="pDark">Affinity Designer</span>. Yesterday Affinity Designer - a European alternative to Adobe Illustrator was on sale, it is why I decided to give it a try.
+                                </p>
+                                <a class="portfolioButton" href="styles/img/portfolioDailyUI/DailyUI_001.jpg" data-lightbox="DailyUI_Button" data-title="Jupiter Travel: Bored of living on Earth? Register now!"><button class="btn2">Zoom In</button></a>
+                        </div>
+
+                </div>
+                <!-- END: DailyUI Portfolio -->
+        </div>
+</article>
+
+<article class="bgGreenLight">
+        <div class="wrapper center wrapper-margin">
+                <h1>One Step Back</h1>
+                <h3>UX Design Process</h3>
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; What you have just read are just nice images - fancy UI concepts. They were prepared with the intention of <span class="pDark">polishing</span> my design skills. I am also a <span class="pDark">User Experience Designer</span>, please take a step back to read about my detailed <a href="portfolioUX_0.html">UX Design Process</a>, and how I justify my design decisions. 
+                <br></p>
+                <!-- <img class="articleImgXS" src="styles/img/portfolioUI/hero_1.jpg" alt=""> -->
+                <img class="articleImgSmall" src="styles/img/portfolioUX/021_Prorotype2_Green.jpg" alt="">
+                <!-- <p>UI Screens in mockups.</p> -->
+
+                <a href="portfolioUX_0.html"><button class="btn1">Read UX Case Study</button></a>
+
+                <p class="pBig pArticle pMargin"><span class="pDark"></span>
+                        &nbsp; &nbsp; <span class="pDark">Thank you for your time</span>, if you have any questions or ideas how could I improve my <span class="pDark">UX Process</span>. Please do not hesitate to contact me, I am always willing to receive constructive feedback.                 
+                <br></p>
+
+                <a href="contact.html"><button class="btn2">Visit Contact Page</button></a>
+
+
+                <br><br><br>
+                <!-- Bottom Arrow -->
+                <div class="Arrow_Down">
+                        <a href="#homeHero"><img src="styles/img/Arrow_UpUp.svg" alt=""></a>
+                </div>
+        </div>   
+</article>
+
+<!-- Start FOOTER -->
+<footer class="bgDark">
+        <div class="wrapper center">
+                <h4>Get in touch</h4><br>
+                <h1>Let's work together</h1>
+                <p class="pMargin">
+                        If you have an online business or mobile app idea in your mind or you need some creative advice about product design, please feel free to contact me.  
+                </p>
+                <a href="mailto:tomas@heiux.com"><div class="myPortrait">
+                        <img src="styles/img/portrait.svg" alt=""><p>Reply Time: within 1-2 working days</p>
+                </div></a><br>
+                <a href="mailto:tomas@heiux.com"><button class="btn1">Let's work together</button></a><br>
+                <div class="mySocial">
+                        <a target="_blank" href="mailto:tomas@heiux.com"><img src="styles/img/icons/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/tczarnecki/"><img src="styles/img/icons/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/tomas_hei/"><img src="styles/img/icons/instagram.svg" alt=""></a>
+                        <a target="_blank" href="https://medium.com/@tomasz_czarnecki"><img src="styles/img/icons/medium.svg" alt=""></a>
+                        <!-- <a target="_blank" href="https://github.com/tomashei"><img src="styles/img/icons/github.svg" alt=""></a> -->
+                        <a target="_blank" href="https://dribbble.com/tomas_hei"><img src="styles/img/icons/dribbble.svg" alt=""></a>
+                </div>
+                <p class="pMargin pSmall">
+                        © 2020 All rights reserved.<br><span class="pLight"><a href="mailto:tomas@heiux.com">Designed & Coded by Tomas HEI</a></span>
+                </p>
+        </div>
+</footer>
+
+
+<!-- <input type="range" min="1" max="60" value="20" oninput="moveSlider(this, 'x')"/>
+<input type="range" min="1" max="40" value="10" oninput="moveSlider2(this, 'y')"/> -->
+
+<script src="styles/javascript/script.js"></script>
+<!-- <script src="script_scroll.js"></script>
+<script src="style_imagesscroll.js"></script>
+<script src="script_touchswipe.js"></script> -->
+
+<script src="styles/javascript/sript_scroll.js"></script>
+
+<!-- LightBox --><script src="styles/lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>

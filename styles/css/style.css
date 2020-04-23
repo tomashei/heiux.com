@@ -1,0 +1,1115 @@
+/****************************************/
+/*            FONTS                     */
+/****************************************/
+@font-face{
+    font-family: publico-light;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/publico-light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/publico-light.woff) format("woff"),
+    url(../fonts/publico-light.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: publico-medium;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/publico-medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/publico-medium.woff) format("woff"),
+    url(../fonts/publico-medium.ttf) format("truetype");
+}
+
+@font-face{
+    font-family:maquette-regular;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/maquette-regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/maquette-regular.woff) format("woff"),
+    url(../fonts/maquette-regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family:maquette-medium;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/maquette-medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/maquette-medium.woff) format("woff"),
+    url(../fonts/maquette-medium.ttf) format("truetype");
+}
+
+/****************************************/
+/*        GLOBAL AND RESET              */
+/****************************************/
+:root {
+    --myWhite: #FFFFFF;
+    --myBlack: #000000;
+    --myDark: #202020; 
+    --myPurple: #595CA2;
+    --myRed: #FF5252;   
+    --myGreen: #4CAF50;
+    --myBlue:#DDEEFE; 
+
+
+    --myGreenLight: #F5F9EC;
+    --myOrangeLight: #FBF1E4;
+    --myPinkLight: #F9F2F8;
+    --myBlueLight: #E3ECFB;
+    --myGrayLight: #F9F9F9;
+
+    --myBlueDark: #21364B;
+
+    --myGrayButton: #C4C4C4;
+    --myGray1: #808080;
+    --myGray2: #404040;
+    --myPurpleLight: #cdcee3;
+
+    /* Presentaion Colors */
+    --myMedBlue: #2e899d;
+    --myMedRed: #ff8d8c;
+    
+
+    /* font-size: 17px; */
+    --nav-height: 2em;
+
+    /* --transition-hero: height 1000ms ease-in-out; */
+    --vHeight: 1;
+    --vHeightHero: 1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: maquette-regular;
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+    text-decoration: none;
+    
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
+    /* display: flex;
+    flex-flow: row wrap; */
+}
+
+
+/****************************************/
+/*         BACKGROUND COLORS            */
+/****************************************/
+
+.bgNone {
+    background-color: none;
+    color: var(--myWhite);
+}
+
+.bgNoneDark {
+    background-color: none;
+    color: var(--myBlack);
+}
+
+.bgNoise {
+    position: absolute;
+    background: var(--myDark);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    background-image: url("../img/bgNoise.png");
+    animation: 0.3s infinite noise; 
+
+    /* pointer-events: none; */
+}
+
+.bgNoiseBlue {
+    background: var(--myBlueDark);   
+}
+
+.bgBluePrint {
+    position: absolute;
+    background:none;
+    background-image: url("../img/bgBluePrint.svg");
+    height: 100%;
+    width: 100%;
+    background-size: 33.33vw;
+    z-index: -1;
+}
+
+.bgPortfolioArchi {
+    position: absolute;
+    background:none;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+
+    height: 100vh;
+    height:calc(var(--vHeight, 1vh) * 100);
+    width: 100vw;
+    z-index: -1;  
+}
+
+.bgPortfolioArchi img {
+
+    width:100vw; 
+    height: 100vh;
+    height:calc(var(--vHeight, 1vh) * 100);
+    object-fit:cover; 
+    /* flex-shrink: 0; */
+/* object-fit: cover; */
+    /* min-width: 100vw;
+    min-height: 100vh; */
+    /* height: auto;
+    width: auto; */
+    /* height: 100%;
+    width: auto;
+    margin-left: -50vh; */
+}
+
+
+.bgDark {
+    background-color: var(--myDark);
+    color: var(--myWhite);
+    /* z-index: -1; */
+}
+
+.bgDark p {
+    color: var(--myGrayButton);
+}
+
+.bgPurple {
+    background-color: var(--myPurple);
+    color: var(--myWhite);
+}
+
+.bgPurple p {
+    color: var(--myPurpleLight);
+}
+
+.bgWhite {
+    background-color: var(--myWhite);
+}
+
+
+.bgWhite p, .bgWhite ul {
+    color: var(--myGray1);
+}
+
+.bgBlue {
+    background: var(--myBlue);
+}
+    
+
+.bgGrayLight, .bgGrayLight ul {
+background: var(--myGrayLight);
+}
+
+.bgGrayLight p, .bgGrayLight ul {
+    color: var(--myGray2);
+}
+
+.bgGreenLight {
+background-color: var(--myGreenLight);
+}
+
+.bgOrangeLight {
+    background-color: var(--myOrangeLight);
+}
+
+.bgPinkLight {
+    background-color: var(--myPinkLight);
+}
+
+.bgBlueLight {
+    background-color: var(--myBlueLight);
+}
+
+.bgGreenLight p, .bgOrangeLight p, .bgPinkLight p, .bgBlueLight p {
+    color: var(--myGray1);
+}
+
+/* Presentation UI Colors */
+
+.bgMedBlue {
+    background-color: var(--myMedBlue);
+    color: var(--myWhite);
+    /* z-index: -1; */
+}
+
+.bgMedRed {
+    background-color: var(--myMedRed);
+    color: var(--myWhite);
+    /* z-index: -1; */
+}
+
+
+/****************************************/
+/*           BASIC ELEMENTS             */
+/****************************************/
+
+h1 {
+    font-family: publico-medium;
+    font-size: 2.9em;
+    letter-spacing: -2.5px;
+    /* margin-bottom: 25px; */
+    margin: 10px 0;
+}
+
+h1 > img {
+    height: 0.8em;
+}
+
+h2 {
+    font-family: maquette-medium;
+    font-size: 1.8em;
+    letter-spacing: -2.5px;
+    margin: 0 0 0 0;
+}
+
+h3 {
+    font-family: publico-medium;
+    font-size: 2.0em;
+    letter-spacing: -2.5px;
+    /* margin-bottom: 25px; */
+    margin-top: 25px;
+    
+}
+
+h4 {
+    font-family: maquette-regular;
+    font-size: 1em;
+    /* letter-spacing: -2.5px; */
+    margin: 0 0 0 0;
+    color: var(--myGray1);
+}
+
+h5 {
+    font-family: maquette-medium;
+    font-size: 1.3em;
+    /* letter-spacing: -2.5px; */
+    text-align: justify;
+    margin: 10px 0;
+    padding-left: 25px;
+    color: var(--myBlack);
+}
+
+h9 {
+    visibility: hidden;
+}
+
+.hBig {
+    font-size: 1.55rem;
+    line-height: 1.5rem;
+}
+
+.hPortfolio {
+    font-size: 10em;
+    color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+a {
+    color: var(--myBlack);
+    text-decoration: none;
+}
+
+.bgDark a {
+    color: var(--myWhite);
+}
+
+p {
+    margin: 15px 0;
+    /* color: var(--myGrayButton); */
+    line-height: 1.15;
+}
+
+/* p b span::first-letter {
+    color: red;
+    font-weight: bold;
+} */
+
+.pDark {
+    font-family: maquette-medium;
+    color: var(--myBlack);
+}
+
+.pLight {
+    font-family: maquette-medium;
+    color: var(--myWhite);
+}
+
+.pBig {
+    font-size: 1.25em;    
+}
+
+.pSmall {
+    font-size: 0.75em;    
+}
+
+.pArticle {
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.pArticle a, h5 a {
+    text-decoration: underline;
+}
+
+.pArticleLeft {
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.h2Red {
+    color: var(--myRed);
+    /* padding: 0;
+    margin: 25px 0 0 0; */
+    font-family: maquette-medium;
+}
+
+.imgXS {
+    display: block;
+}
+
+.imgM {
+    display: none;
+}
+
+/****************************************/
+/*         ARTICLE AND WRAPPER          */
+/****************************************/
+article {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* padding: 20px 0 0 0; */
+    height: auto;
+    width: 100vw;
+    /* min-height: 100vh; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Wrapper does not have TOP-BOTTOM margins */
+.wrapper {
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* background-color: red; */
+    /* z-index: 0; */
+}
+
+.wrapper-margin {
+    /* margin: 0 auto; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}  
+
+.fullScreen {
+    height: auto;
+    min-height: 100vh;
+    padding: 0;   
+}
+
+.myHero {
+    min-height: auto;
+    height: 100vh;
+    /* height: calc(var(--vHeight, 1vh) * 100); */
+    height: calc(var(--vHeight, 1vh) * 100);
+    /* height: calc(--vHeightHero * 100000); */
+}
+
+.articleImg {
+    /* object-fit: contain; */
+    width: 100%;
+    height: auto;
+}
+
+.articleImgSmall {
+    width: 100%;
+    /* margin: 0 250px; */
+    align-self: center;
+}
+
+.articleImgXS {
+    width: 100%;
+    /* margin: 0 250px; */
+    align-self: center;
+}
+
+.articleImgDiamond {
+    width: 70px;
+    /* margin: 0 250px; */
+    align-self: center;
+}
+
+h5 .articleImgDiamond {
+    width: 35px;
+}
+
+
+article > .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.myHero-MarginTop > .wrapper {
+    padding-top: 4rem;
+}
+
+.center {
+    text-align: center;
+}
+
+article > .content-top {
+    justify-content: flex-start;
+}
+
+.wechat {
+    width: 100%;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.wechat img {
+    width: 200px;
+}
+
+.ChineseFont {
+    font-family: Microsoft Yahei, 微软雅黑, Hiragino Sans GB, 冬青黑体简体中文;
+    color: var(--myGrayButton);
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+/****************************************/
+/*               BUTTONS                */
+/****************************************/
+button {
+    padding: 16px 20px 17px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--myWhite);
+    
+    border-radius: 4px;
+    border: none; 
+    /* border: 0px solid #4CAF50;  */
+    width: 75%;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    vertical-align: middle;
+
+    margin: 10px 0;
+}
+
+.btn-wide {
+    min-width: 300px;
+}
+  
+button:hover {
+    background-color: var(--myGreen); /* Green */
+    color: var(--myWhite);
+}
+
+
+.btn1 {
+    background-color: var(--myRed);
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 1px solid var(--myGrayButton); 
+    color: var(--myGrayButton);
+}
+
+.btn3 {
+    background-color: var(--myBlack);
+}
+
+.btn4 {
+    background-color: var(--myWhite);
+    border: none; 
+    color: var(--myBlack);
+}
+
+.btn-small {
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    width: auto;
+}
+
+.btn-menu {
+    font-size: 1.2rem;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    width: auto;
+}
+
+
+
+
+
+/****************************************/
+/*              NAVIGATION              */
+/****************************************/
+nav {
+    position: absolute;
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    width: 100vw;
+    /* height: auto; */
+    padding: 15px 0;
+    /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.7) ; */
+    /* box-shadow: 0px 5px 50px black; */
+    z-index: 2;
+
+    /* height: auto; */
+    color: var(--myWhite);
+}
+
+.myNav {
+    display: flex;
+
+    /* list-style: none; */
+    /* margin: 0 auto; */
+    padding-top: 0;
+    font-size: 1em;/*calc(2*var(--nav-height)); */
+    /* line-height: var(--nav-height); */
+    /* background-color: purple; */
+    height: auto;
+    /* vertical-align: middle; */
+
+}
+
+.myNav a {
+    margin-right: auto;
+}
+
+.myNav img {
+    /* background: hsla(228, 100%, 50%, 0.5); */
+    margin: 0;
+    padding: 0;
+    height: var(--nav-height);
+    /* background: blue; */
+    vertical-align: top;
+    z-index: 3;
+    position: relative;
+}
+
+.menuToggle {
+    display: none;
+}
+
+/****************************************/
+/*               PORTFOLIO   UX         */
+/****************************************/
+.portfolioUX {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: #4CAF50; */
+}
+
+/* No reverse for XS,S */
+.portfolioReverse {
+    flex-direction: column;
+}
+
+.portfolioText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+}
+
+.portfolioReverse > .portfolioText {
+    padding-left: 0;
+}
+
+.portfolioUX img {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+
+.portfolioHeroUX {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.portfolioHeroImg {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* .portfolioHeroPhone {
+    height: 80%;
+    width: auto;
+    margin: 0;
+    padding: 0;  
+} */
+
+.portfolioHeroText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+    /* margin-top: -15%; */
+        /* background-color: #4CAF50; */
+}
+
+#portfolioHeroSmallImage {
+    display: block;
+    width: 100%;
+    /* max-width: 70vw; */
+    height: auto;
+    /* border-radius: 50%; */
+    margin: 20px auto 0 auto;
+}
+
+/****************************************/
+/*        PORTFOLIO   ARCHITECTURE      */
+/****************************************/
+.portfolioArchi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.portfolioArchi div {
+    background: var(--myGrayLight);
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    padding: 0 25px;
+    padding-bottom: 15px;
+    /* position: relative; */
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioArchi img {
+    width: 100%;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+}
+
+/* .portfolioArchi img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+} */
+
+.portfolioArchi p {
+    flex-grow: 1;
+}
+
+/* .portfolioButton {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+} */
+
+
+/****************************************/
+/*        PORTFOLIO   DETAILS           */
+/****************************************/
+.portfolioDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0 5px 0;
+
+    border-bottom: 1px solid var(--myGrayButton);
+}
+
+
+.portfolioDetails > div {
+    /* flex-grow: 1; */
+    width: 50%;
+    text-align: center;
+}
+
+.portfolioDetails p {
+    margin: 5px 0 15px 0;
+    
+}
+
+
+/****************************************/
+/*               ARROWS                 */
+/****************************************/
+
+.Arrow_Down {
+    position: relative;
+    width: 100%;
+    /* bottom: 0px; */
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 0;
+    /* background-color: red; */
+}
+
+.Arrow_Down img {
+    height: 40px;
+    margin: 0px 25px 15px 25px;
+}
+
+/* .Arrow_Up {
+    margin: 205px 0 0 0;
+} */
+
+/* .Arrow_Hero img {
+    margin-top: -75px;
+    margin-bottom: 50px; 
+} */
+
+/****************************************/
+/*               MY PORTRAIT            */
+/****************************************/
+.myPortrait {
+    display: inline-flex;
+    align-items: center;
+    color: var(--myWhite);
+    margin: 5px 0;
+
+}
+
+.myPortrait img {
+    height: 45px;
+}
+
+.myPortrait p {
+    height: auto;
+    margin-left: 5px;
+    color: var(--myWhite);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+
+
+
+/* .myPortraitDark {
+    color: var(--myDark);
+} */
+
+.myPortraitDark img {
+    height: 40px;
+}
+
+.myPortraitDark p {
+    color: var(--myBlack);
+    font-family: maquette-medium;
+}
+
+
+/****************************************/
+/*            TESTIMONIALS              */
+/****************************************/
+.testimonials {
+    /* border: 3px solid var(--myWhite); */
+    border: 1px solid var(--myGrayButton);
+    padding: 30px 8px;
+    margin: 0 0;
+    margin-top: 65px;
+}
+
+.testimonials img {
+    height: 80px;
+}
+
+.testimonials > img {
+    margin: 0 auto;
+    margin-top: -100px;
+    height: 140px;
+    /* border: 3px solid var(--myWhite); */
+    border: 1px solid var(--myGrayButton);
+    border-radius: 50%;
+}
+
+.testimonials div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 100%;
+}
+.testimonials p {
+    font-style: italic;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--myWhite);
+}
+.testimonials span {
+    height: auto;
+    margin-left: 15px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.testimonialsDark {
+    border-color: var(--myBlack); 
+    color: var(--myBlack);
+}
+
+.testimonialsDark p {
+    color: var(--myBlack);
+}
+
+.testimonialsDark > img{
+    border: 1px solid var(--myBlack);
+}
+
+.testimonialsQuotation {
+    margin-top: 0;
+}
+
+.testimonialsQuotation span {
+    flex-grow: 0;
+}
+
+.testimonialsQuotation div {
+    justify-content: center;
+}
+
+.testimonialsQuotation img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/****************************************/
+/*             MY WAY TO UX             */
+/****************************************/
+.myWayUX {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+
+.myWayUXitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.myWayUXitem h2 {
+    text-align: left;
+    padding: 0 8px;
+    font-size: 1.8rem;
+}
+
+.myWayUXnumber {
+    color: var(--myGrayButton);
+    /* border: 2px solid var(--myGrayButton);
+    border-radius: 50%; */
+}
+
+.myWayUXShowM {
+    display: none;
+}
+
+
+
+
+
+/****************************************/
+/*               INSTAGRAM              */
+/****************************************/
+.instagram {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.instagram a {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+.instagram img {
+    width: 100%;
+}
+
+
+.instagram img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/****************************************/
+/*            PORTFOLIO LIST            */
+/****************************************/
+.pList {
+    list-style: circle;
+    text-align: left;
+    font-size: 1.25em; 
+    padding-left: 25px;
+}
+
+.pListSmall {
+    padding-left: 50px;
+}
+
+ol.pList {
+    list-style-type:  decimal;
+}
+
+.pList li {
+    display: list-item;
+}
+
+.pListSmall li {
+    line-height: 1.6em;
+}
+
+/****************************************/
+/*               Contact Work           */
+/****************************************/
+.smallFields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 0;
+
+}
+
+.smallFields div {
+    margin: 10px 10px;
+    padding: 24px 20px 0 20px;
+    background-color: var(--myBlueDark);
+    border-radius: 16px;
+    color: var(--myWhite);
+    width: 100%;
+}
+
+.smallFields p {
+    color: var(--myGrayButton);
+}
+
+.smallFields img {
+    width: 150px;
+    margin: 0 0 25px 0;
+}
+
+
+
+/****************************************/
+/*               FOOTER                 */
+/****************************************/
+footer {
+    padding: 50px 0 30px 0;
+}
+
+.mySocial {
+    display: inline-flex;
+    width: auto;
+}
+
+.mySocial img {
+    height: 40px;
+    width: auto;
+    margin: 0 10px;
+}
+
+
+.mySocial img:hover,
+.mySocial img:focus {
+    filter: brightness(200%);
+}
+
+
+
+
+/****************************************/
+/*               ANIMATION              */
+/****************************************/
+@keyframes noise {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: -5% -10%;
+    }
+
+    20% {
+        background-position: -15% 5%;
+    }
+
+    30% {
+        background-position: 7% -25%;
+    }
+
+    40% {
+        background-position: 20% 25%;
+    }
+
+    50% {
+        background-position: -25% 10%;
+    }
+
+    60% {
+        background-position: 15% 5%;
+    }
+
+    70% {
+        background-position: 0% 15%;
+    }
+
+    80% {
+        background-position: 25% 35%;
+    }
+
+    90% {
+        background-position: -10% 10%;
+    }
+}

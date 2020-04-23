@@ -1,0 +1,15 @@
+.pad20 {
+    padding: 20px;
+  }
+  .h100vh {
+    height: 100vh;
+  }
+  .line {
+    background: var(--myRed);
+    height: 4px;
+    border-radius: 0;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+  }
