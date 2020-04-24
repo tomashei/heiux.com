@@ -24,7 +24,7 @@ If you see any typos or formatting errors in a post, or any other issue that nee
 
 ## Author
 
-- [Tomasz Czarnecki](https://www.heiux.com)
+- [Tomasz Czarnecki](https://heiux.com)
 
 ## License
 
