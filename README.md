@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # heiux.com
-💾 Tania's personal website running on HTML, CSS and Vanilla JavaScript. 
+💾 Tomas' personal website running on HTML, CSS and Vanilla JavaScript. 
 
 ## Note
 
