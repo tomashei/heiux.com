@@ -5,11 +5,11 @@
 
 ## Note
 
-I've made my website open source for your inspiration, motivation, and curiosity. However, this site is highly customized and personally tailored, and it is not simply a theme. **I encourage you to be creative and create your own theme, design, and content.**
+I have made this site opened and published it on GitHub for educational purposes. It is for me a testing ground for future development. 
 
 ## Contributing
 
-If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
+**If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!**
 
 ## Author
 
